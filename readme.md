@@ -29,29 +29,39 @@ none
 + Structure Group
 
 #### Embeddable Schemas
-+ Generic Basic Link
-+ Generic Basic Link - Rich Text
-+ Generic Basic Link List
-+ Generic Call to Action
-+ Generic Image
-+ Generic Paragraph
-+ Key Value Pair
++ Embedded Header
++ Embedded Generic Basic Link Rich Text
++ Embedded Generic Basic Link
++ Embedded Image
++ Embedded Legal
++ Embedded Media Metadata
++ Embedded Video Attributes
++ Embedded Paragraph
 + Key Value Pair - Rich Text
-+ Paragraph with Media
-+ Webtrends
++ Key Value Pair Embeddable
++ Links
 
 #### Content Schemas
 + Code
 + Dummy
-+ General Body Copy
-+ General Body Header
-+ General Call to Action
-+ General Component Collection
-+ General Link List
++ Generic Body Copy
++ Generic Article
++ Generic Call to Action
++ Generic Image
++ Generic Video
++ Generic Link List
++ Generic Image List
++ Generic Component List
++ Generic Video List
+
+### Default Categories
+
++ Social Media
++ Aspect Ratios
 
 ## License:
 
-Copyright (c) 2013 Frank M. Taylor
+Copyright (c) 2014 Frank M. Taylor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
