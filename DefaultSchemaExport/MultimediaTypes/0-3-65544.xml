@@ -1,0 +1,13 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Png image</tcm:Title>
+    <tcm:MIMEType>image/png</tcm:MIMEType>
+    <tcm:FileExtensions>
+      <tcm:FileExtension>png</tcm:FileExtension>
+    </tcm:FileExtensions>
+  </tcm:Data>
+  <tcccp:Dependencies />
+</tcccp:Item>

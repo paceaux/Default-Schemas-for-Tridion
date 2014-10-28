@@ -1,0 +1,14 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>QuickTime movie</tcm:Title>
+    <tcm:MIMEType>video/quicktime</tcm:MIMEType>
+    <tcm:FileExtensions>
+      <tcm:FileExtension>mov</tcm:FileExtension>
+      <tcm:FileExtension>qt</tcm:FileExtension>
+    </tcm:FileExtensions>
+  </tcm:Data>
+  <tcccp:Dependencies />
+</tcccp:Item>

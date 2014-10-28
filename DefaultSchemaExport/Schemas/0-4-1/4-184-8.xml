@@ -1,0 +1,111 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Embeddable Generic Basic Link Rich Text</tcm:Title>
+    <tcm:Description>Embeddable Generic Basic Link Rich Text</tcm:Description>
+    <tcm:Purpose>Embedded</tcm:Purpose>
+    <tcm:NamespaceURI />
+    <tcm:RootElementName>GenericBasicLink</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns="" elementFormDefault="qualified">
+        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  
+  <xsd:complexType name="KeyValuePair">
+    <xsd:sequence>
+      <xsd:element name="Key" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Value" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="LinkTitle" Metadata="false">LinkTitle</tcm:Label>
+        <tcm:Label ElementName="InternalLink" Metadata="false">InternalLink</tcm:Label>
+        <tcm:Label ElementName="ExternalLink" Metadata="false">ExternalLink</tcm:Label>
+        <tcm:Label ElementName="Target" Metadata="false">Target</tcm:Label>
+        <tcm:Label ElementName="LinkAttributes" Metadata="false">Link Attributes</tcm:Label>
+      <tcm:Label ElementName="Key" Context="tcm:4-182-8">Key</tcm:Label><tcm:Label ElementName="Value" Context="tcm:4-182-8">Value</tcm:Label></tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:complexType name="GenericBasicLink">
+    <xsd:sequence>
+      <xsd:element name="LinkTitle" minOccurs="0" maxOccurs="1" type="tcmi:MultiLineText">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">3</tcm:Size>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="InternalLink" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ComponentLink</tcm:linktype>
+            <tcm:AllowMultimediaLinks xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:AllowMultimediaLinks>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ExternalLink" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ExternalLink</tcm:linktype>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Target" minOccurs="0" maxOccurs="1">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:normalizedString">
+            <xsd:enumeration value="Same Window" />
+            <xsd:enumeration value="New Window" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="LinkAttributes" minOccurs="0" maxOccurs="1" type="KeyValuePair">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Key%20Value%20Pair%20Embeddable.xsd" xlink:title="Key Value Pair Embeddable" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[2]/xsd:sequence[1]/xsd:element[5]/xsd:annotation[1]/xsd:appinfo[1]/tcm:EmbeddedSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Key%20Value%20Pair%20Embeddable.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

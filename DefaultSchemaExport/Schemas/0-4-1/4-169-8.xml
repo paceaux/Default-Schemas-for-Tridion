@@ -1,0 +1,101 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Structure Group Metadata</tcm:Title>
+    <tcm:Description>Structure Group Metadata</tcm:Description>
+    <tcm:Purpose>Metadata</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:316ce222-38b9-4722-8660-37e1330a8f2a</tcm:NamespaceURI>
+    <tcm:RootElementName />
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:316ce222-38b9-4722-8660-37e1330a8f2a" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:category="tcm:0-4-1/Categories.xsd" elementFormDefault="qualified" targetNamespace="uuid:316ce222-38b9-4722-8660-37e1330a8f2a">
+        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+        <xsd:import namespace="tcm:0-4-1/Categories.xsd" schemaLocation="/webdav/010%20Schemas%20and%20Categories/Categories.xsd" />
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+              <tcm:Label ElementName="Markets" Metadata="true">Markets</tcm:Label>
+              <tcm:Label ElementName="Platforms" Metadata="true">Platforms</tcm:Label>
+              <tcm:Label ElementName="CSS" Metadata="true">Reference to CSS Components</tcm:Label>
+              <tcm:Label ElementName="JavaScript" Metadata="true">Reference to JavaScript Components</tcm:Label>
+            </tcm:Labels>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:element name="Metadata">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Markets" minOccurs="0" maxOccurs="1" type="category:blackboardMarkets">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0">
+                      <configuration xmlns="http://www.sdltridion.com/2011/SiteEdit">
+                        <field>
+                          <editable>false</editable>
+                        </field>
+                      </configuration>
+                    </ExtensionXml>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="Platforms" minOccurs="0" maxOccurs="1" type="category:blackboardPlatforms">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0">
+                      <configuration xmlns="http://www.sdltridion.com/2011/SiteEdit">
+                        <field>
+                          <editable>false</editable>
+                        </field>
+                      </configuration>
+                    </ExtensionXml>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="CSS" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">MultimediaLink</tcm:linktype>
+                    <tcm:AllowedTargetSchemas xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+                      <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas/Default%20Multimedia%20Schema.xsd" xlink:title="Default Multimedia Schema" />
+                    </tcm:AllowedTargetSchemas>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="JavaScript" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">MultimediaLink</tcm:linktype>
+                    <tcm:AllowedTargetSchemas xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+                      <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas/Default%20Multimedia%20Schema.xsd" xlink:title="Default Multimedia Schema" />
+                    </tcm:AllowedTargetSchemas>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" />
+    <tcccp:Dependency dependencyType="Category" itemType="Category" xpath="tcm:Data/tcm:Xsd/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Bb%2Ecom%20Markets" />
+    <tcccp:Dependency dependencyType="Category" itemType="Category" xpath="tcm:Data/tcm:Xsd/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Bb%2Ecom%20Platforms" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas/Default%20Multimedia%20Schema.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[4]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas/Default%20Multimedia%20Schema.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

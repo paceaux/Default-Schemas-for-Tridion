@@ -1,14 +1,21 @@
 # Default Schemas for Tridion
-## Version: 0.0.1
+## Version: 0.0.2
 ## Description
 
-These are some very generic, default schemas that could work for most Tridion 2013 implementations. These schemas were created in an 010 publication labelled: "010 Schemas and Categories". This is a Content Porter Export package. There are two zip files. One uses Pascal Casing for XML Field names, the other uses camel casing. 
+These are some very generic, default schemas that could work for most Tridion 2013 implementations. These schemas were created in an 010 publication labelled: "010 Schemas and Categories". 
+
+This is a Content Porter Export package. It should run for SDL Tridion 2013 and lower
+
+Please reference this project's Wiki for details on what's in the schemas. 
+
+
 
 ### The Default Schemas
-These schemas are based on what has been seen in various Tridion implementations. Embeddable Schemas start with the term "Generic" while Content schemas start with the term "General". Some content schemas are identical to embeddable schemas; general and generic  are how you can distinguish the two. 
+These schemas are based on what has been seen in various Tridion implementations. Embeddable Schemas start with the term "Embedded" while Content schemas start with the term "Generic". 
 
 #### System Schemas
-none
+Code
+Dummy
 
 #### Parameter Schemas
 + Item Uri
@@ -42,8 +49,7 @@ none
 + Links
 
 #### Content Schemas
-+ Code
-+ Dummy
+
 + Generic Body Copy
 + Generic Article
 + Generic Call to Action

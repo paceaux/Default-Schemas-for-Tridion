@@ -1,0 +1,23 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Root</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Root</tcm:Title>
+    <tcm:DefaultPageTemplate IsInherited="true" xlink:type="simple" xlink:title="Default Page Template" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates/Default%20Page%20Template.tptcmp" />
+    <tcm:Directory IsMandatory="false"></tcm:Directory>
+    <tcm:IsActive ResolvedValue="true">true</tcm:IsActive>
+    <tcm:PageProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:PageBundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemPublication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="DefaultPageTemplate" itemType="PageTemplate" xpath="tcm:Data/tcm:DefaultPageTemplate/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates/Default%20Page%20Template.tptcmp" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="PageBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:PageBundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="PageProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:PageProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

@@ -1,0 +1,16 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Real player</tcm:Title>
+    <tcm:MIMEType>video/vnd.rn-realmedia</tcm:MIMEType>
+    <tcm:FileExtensions>
+      <tcm:FileExtension>rm</tcm:FileExtension>
+      <tcm:FileExtension>ra</tcm:FileExtension>
+      <tcm:FileExtension>rv</tcm:FileExtension>
+      <tcm:FileExtension>ram</tcm:FileExtension>
+    </tcm:FileExtensions>
+  </tcm:Data>
+  <tcccp:Dependencies />
+</tcccp:Item>
