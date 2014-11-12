@@ -26,6 +26,7 @@
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System" exportTitle="Component%20Templates" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System" exportTitle="Page%20Templates" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System" exportTitle="Schemas" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas" exportTitle="Bundle%20Schemas" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas" exportTitle="Content" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas" exportTitle="Embeddable%20Schemas" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas" exportTitle="Metadata%20Schemas" importContext="" importTitle="" />
@@ -80,25 +81,49 @@
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates/Outbound%20E-mail" exportTitle="Outbound%20E-mail%20Pre-processing.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" exportTitle="Publish%20Binaries%20in%20Package.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates/SDL%20External%20Content%20Library" exportTitle="Resolve%20ECL%20items%20V2.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embeddable%20Generic%20Basic%20Link%20Rich%20Text.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embedded%20Generic%20Basic%20Link.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embedded%20Image.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embedded%20Legal.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embedded%20Media%20Metadata.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Embedded%20Paragraph.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Bundle%20Schemas" exportTitle="Legal%20Bundle.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Article.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Button%20Field.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Call%20to%20Action.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Content.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20External%20Link.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Form.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Image%20List.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Image.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Input%20Field.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Link%20List.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Select%20Box%20Field.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Textarea%20Field.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Video%20List.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content" exportTitle="Generic%20Video.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Assets.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Code.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Document%20Attributes.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Form%20Field%20Attributes.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Form%20Fieldset.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Header.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Image%20Attributes.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Image.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Key%20Value%20Pair%20-%20Plain%20Text.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Key%20Value%20Pair%20-%20Rich%20Text.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Key%20Value%20Pair%20Embeddable.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Links.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Legal.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Link%20List.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Link.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Navigation.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Paragraph.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" exportTitle="Video%20Attributes.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" exportTitle="Code%20Metadata.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" exportTitle="DD4T%20Metadata%20Schema.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" exportTitle="Page%20Metadata.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" exportTitle="Structure%20Group%20Metadata.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Audio.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="CSS.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Default%20Multimedia%20Schema.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Document.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Flash%20Video.xsd" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="HTML5%20Video.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Image.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="JavaScript.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Office%20PDF%20Document.xsd" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Multimedia%20Schemas" exportTitle="Videos.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Parameter%20Schemas" exportTitle="Item%20Uri.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Parameter%20Schemas" exportTitle="Publish%20Binaries%20to%20Specific%20Locations.xsd" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/System%20Schemas" exportTitle="Code.xsd" importContext="" importTitle="" />
@@ -110,10 +135,6 @@
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" exportTitle="Default%20Component%20Template%20for%20UGC.tctcmp" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" exportTitle="Default%20Component%20Template.tctcmp" importContext="" importTitle="" />
   </tcccp:ItemSet>
-  <tcccp:ItemSet role="Page">
-    <tcccp:Mapping exportContext="/000%20Empty%20Parent/Root" exportTitle="test%20page.tpg" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Root" exportTitle="test%20page.tpg" importContext="" importTitle="" />
-  </tcccp:ItemSet>
   <tcccp:ItemSet role="PageTemplate">
     <tcccp:Mapping exportContext="/000%20Empty%20Parent/Building%20Blocks/Default%20Templates" exportTitle="Default%20Page%20Template%20for%20UGC.tptcmp" importContext="" importTitle="" />
     <tcccp:Mapping exportContext="/000%20Empty%20Parent/Building%20Blocks/Default%20Templates" exportTitle="Default%20Page%20Template.tptcmp" importContext="" importTitle="" />
@@ -121,8 +142,26 @@
     <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" exportTitle="Default%20Page%20Template.tptcmp" importContext="" importTitle="" />
   </tcccp:ItemSet>
   <tcccp:ItemSet role="Category">
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories" exportTitle="Bb%2Ecom%20Markets" importContext="" importTitle="" />
-    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories" exportTitle="Bb%2Ecom%20Platforms" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories" exportTitle="Aspect%20Ratios" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories" exportTitle="Devices" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories" exportTitle="Social%20Media" importContext="" importTitle="" />
+  </tcccp:ItemSet>
+  <tcccp:ItemSet role="Keyword">
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="1%3A1.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="16%3A9.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="3%3A2.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="4%3A3.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="5%3A3.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Aspect%20Ratios" exportTitle="5%3A4.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Devices" exportTitle="Desktop.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Devices" exportTitle="phablet.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Devices" exportTitle="phone.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Devices" exportTitle="tablet.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Social%20Media" exportTitle="facebook.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Social%20Media" exportTitle="foursquare.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Social%20Media" exportTitle="googleplus.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Social%20Media" exportTitle="linkedin.tkw" importContext="" importTitle="" />
+    <tcccp:Mapping exportContext="/010%20Schemas%20and%20Categories/Social%20Media" exportTitle="twitter.tkw" importContext="" importTitle="" />
   </tcccp:ItemSet>
   <tcccp:ItemSet role="TemplateBuildingBlock">
     <tcccp:Mapping exportContext="/000%20Empty%20Parent/Building%20Blocks/Default%20Templates" exportTitle="Activate%20Tracking.tbbcs" importContext="" importTitle="" />

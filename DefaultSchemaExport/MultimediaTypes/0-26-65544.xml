@@ -3,10 +3,10 @@
   <tcccp:BlueprintParentUrl />
   <tcccp:BinaryFileLocation />
   <tcm:Data>
-    <tcm:Title>HTML5 webm</tcm:Title>
-    <tcm:MIMEType>video/webm, audio/webm</tcm:MIMEType>
+    <tcm:Title>Less</tcm:Title>
+    <tcm:MIMEType>text/css</tcm:MIMEType>
     <tcm:FileExtensions>
-      <tcm:FileExtension>webm</tcm:FileExtension>
+      <tcm:FileExtension>less</tcm:FileExtension>
     </tcm:FileExtensions>
   </tcm:Data>
   <tcccp:Dependencies />

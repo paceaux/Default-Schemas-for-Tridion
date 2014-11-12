@@ -3,10 +3,10 @@
   <tcccp:BlueprintParentUrl />
   <tcccp:BinaryFileLocation />
   <tcm:Data>
-    <tcm:Title>MP4</tcm:Title>
-    <tcm:MIMEType>video/mp4</tcm:MIMEType>
+    <tcm:Title>HTML5 OGG</tcm:Title>
+    <tcm:MIMEType>video/ogg, audio/ogg, application/ogg</tcm:MIMEType>
     <tcm:FileExtensions>
-      <tcm:FileExtension>mp4</tcm:FileExtension>
+      <tcm:FileExtension>ogg</tcm:FileExtension>
     </tcm:FileExtensions>
   </tcm:Data>
   <tcccp:Dependencies />

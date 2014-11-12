@@ -3,10 +3,10 @@
   <tcccp:BlueprintParentUrl />
   <tcccp:BinaryFileLocation />
   <tcm:Data>
-    <tcm:Title>Adobe Flash Video</tcm:Title>
-    <tcm:MIMEType>video/x-flv</tcm:MIMEType>
+    <tcm:Title>HTML5 webm</tcm:Title>
+    <tcm:MIMEType>video/webm, audio/webm</tcm:MIMEType>
     <tcm:FileExtensions>
-      <tcm:FileExtension>flv</tcm:FileExtension>
+      <tcm:FileExtension>webm</tcm:FileExtension>
     </tcm:FileExtensions>
   </tcm:Data>
   <tcccp:Dependencies />
