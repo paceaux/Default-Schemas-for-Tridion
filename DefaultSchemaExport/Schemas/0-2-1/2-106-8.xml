@@ -1,0 +1,72 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Code Metadata</tcm:Title>
+    <tcm:Description>Code Metadata</tcm:Description>
+    <tcm:Purpose>Metadata</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:30ba4d77-cb39-466a-aa8b-df527296f516</tcm:NamespaceURI>
+    <tcm:RootElementName />
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:30ba4d77-cb39-466a-aa8b-df527296f516" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" elementFormDefault="qualified" targetNamespace="uuid:30ba4d77-cb39-466a-aa8b-df527296f516">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="minify" Metadata="true">Minify</tcm:Label>
+        <tcm:Label ElementName="timestamp" Metadata="true">Timestamp</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="Metadata">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="minify" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:normalizedString">
+              <xsd:enumeration value="Yes" />
+              <xsd:enumeration value="No" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="timestamp" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:normalizedString">
+              <xsd:enumeration value="Yes" />
+              <xsd:enumeration value="No" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Metadata%20Schemas" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

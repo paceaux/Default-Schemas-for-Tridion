@@ -1,0 +1,114 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Link</tcm:Title>
+    <tcm:Description>Link</tcm:Description>
+    <tcm:Purpose>Embedded</tcm:Purpose>
+    <tcm:NamespaceURI />
+    <tcm:RootElementName>link</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns="" elementFormDefault="qualified">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="linkText" Metadata="false">Text for the link</tcm:Label>
+        <tcm:Label ElementName="title" Metadata="false">Title (tooltip)</tcm:Label>
+        <tcm:Label ElementName="internalLink" Metadata="false">Internal Link</tcm:Label>
+        <tcm:Label ElementName="externalLink" Metadata="false">externalLink</tcm:Label>
+        <tcm:Label ElementName="target" Metadata="false">Target</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:complexType name="link">
+    <xsd:sequence>
+      <xsd:element name="linkText" minOccurs="1" maxOccurs="1" type="xsd:normalizedString">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="title" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="internalLink" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ComponentLink</tcm:linktype>
+            <tcm:AllowMultimediaLinks xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:AllowMultimediaLinks>
+            <tcm:AllowedTargetSchemas xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Content.xsd" xlink:title="Generic Content" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/System%20Schemas/Dummy.xsd" xlink:title="Dummy" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/System%20Schemas/Code.xsd" xlink:title="Code" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Article.xsd" xlink:title="Generic Article" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Image.xsd" xlink:title="Generic Image" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Video.xsd" xlink:title="Generic Video" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Video%20List.xsd" xlink:title="Generic Video List" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Image%20List.xsd" xlink:title="Generic Image List" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20External%20Link.xsd" xlink:title="Generic External Link" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Call%20to%20Action.xsd" xlink:title="Generic Call to Action" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Link%20List.xsd" xlink:title="Generic Link List" />
+            </tcm:AllowedTargetSchemas>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="externalLink" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ExternalLink</tcm:linktype>
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="target" minOccurs="0" maxOccurs="1">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:normalizedString">
+            <xsd:enumeration value="same" />
+            <xsd:enumeration value="new" />
+            <xsd:enumeration value="modal" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Content.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[2]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/System%20Schemas/Dummy.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[3]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/System%20Schemas/Code.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[4]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Article.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[5]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Image.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[6]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Video.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[7]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Video%20List.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[8]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Image%20List.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[9]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20External%20Link.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[10]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Call%20to%20Action.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[11]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Link%20List.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

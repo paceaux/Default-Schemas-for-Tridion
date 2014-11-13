@@ -1,0 +1,108 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Convert%20Html%20to%20Xml.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Convert Html to Xml</tcm:Title>
+    <tcm:Description>Convert Html to Xml</tcm:Description>
+    <tcm:Purpose>TemplateParameters</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:7B6296B9-C8BA-4A38-A5C8-FBD333C54FE5</tcm:NamespaceURI>
+    <tcm:RootElementName>Parameters</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns="uuid:7B6296B9-C8BA-4A38-A5C8-FBD333C54FE5" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="uuid:7B6296B9-C8BA-4A38-A5C8-FBD333C54FE5">
+        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+              <tcm:Label ElementName="Accessibility" Metadata="false">Accessibility level</tcm:Label>
+              <tcm:Label ElementName="TargetDocumentType" Metadata="false">Document type</tcm:Label>
+              <tcm:Label ElementName="ItemName" Metadata="false">Item name</tcm:Label>
+              <tcm:Label ElementName="CreateHTMLFragment" Metadata="false">Create HTML Fragment</tcm:Label>
+            </tcm:Labels>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:element name="Parameters">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Accessibility" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/ConvertHtmlToXhtml.html#Accessibility</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">none</tcm:DefaultTextValue>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">0</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">edit</tcm:listtype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="none" />
+                    <xsd:enumeration value="WCAG Priority 1" />
+                    <xsd:enumeration value="WCAG Priority 2" />
+                    <xsd:enumeration value="WCAG Priority 3" />
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="TargetDocumentType" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/ConvertHtmlToXhtml.html#TargetDocumentType</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">Auto</tcm:DefaultTextValue>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">0</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">edit</tcm:listtype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="Auto" />
+                    <xsd:enumeration value="Omit" />
+                    <xsd:enumeration value="Loose" />
+                    <xsd:enumeration value="Strict" />
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="ItemName" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/ConvertHtmlToXhtml.html#ItemName</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">Output</tcm:DefaultTextValue>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="CreateHTMLFragment" minOccurs="0" maxOccurs="1">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/ConvertHtmlToXhtml.html#CreateHTMLFragment</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                    <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:DefaultTextValue>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">0</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">edit</tcm:listtype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="false" />
+                    <xsd:enumeration value="true" />
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

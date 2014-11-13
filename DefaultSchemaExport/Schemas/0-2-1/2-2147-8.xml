@@ -1,0 +1,64 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Legal Bundle</tcm:Title>
+    <tcm:Description>Legal Bundle</tcm:Description>
+    <tcm:Purpose>Bundle</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:4909c431-66e6-4114-8e5c-1f742104958a</tcm:NamespaceURI>
+    <tcm:RootElementName />
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:4909c431-66e6-4114-8e5c-1f742104958a" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" elementFormDefault="qualified" targetNamespace="uuid:4909c431-66e6-4114-8e5c-1f742104958a">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="campaign" Metadata="true">campaign</tcm:Label>
+        <tcm:Label ElementName="approver" Metadata="true">approver</tcm:Label>
+        <tcm:Label ElementName="date" Metadata="true">date</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="Metadata">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="campaign" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="approver" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="date" minOccurs="0" maxOccurs="1" type="xsd:dateTime">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Bundle%20Schemas" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>
