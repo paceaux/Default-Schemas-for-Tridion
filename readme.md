@@ -1,69 +1,35 @@
-# Default Schemas for Tridion
-## Version: 0.0.2
+# Default Schemas for Tridion (DS4T)
+## Version: 0.0.3
 ## Description
 
-These are some very generic, default schemas that could work for most Tridion 2013 implementations. These schemas were created in an 010 publication labelled: "010 Schemas and Categories". 
+These are some very generic, default schemas that could work for most Tridion 2013 implementations. 
+This is a Content Porter Export package. It should run for SDL Tridion 2013 and lower.
 
-This is a Content Porter Export package. It should run for SDL Tridion 2013 and lower
+Please reference the Wiki  for documentation on the schemas on what's in the schemas. 
 
-Please reference this project's Wiki for details on what's in the schemas. 
+## Contents
 
 
+### Blueprint
+000 Empty Parent
+010 Schemas and Categories
 
-### The Default Schemas
-These schemas are based on what has been seen in various Tridion implementations. Embeddable Schemas start with the term "Embedded" while Content schemas start with the term "Generic". 
+### Schemas
++ Bundle Schemas
++ Content Schemas
++ Embeddable Schemas
++ Metadata Schemas
++ Multimedia Schemas
++ Parameter Schemas
++ System Schemas 
 
-#### System Schemas
-Code
-Dummy
-
-#### Parameter Schemas
-+ Item Uri
-+ Publish Binaries to Specific Locations
-
-#### Multimedia Schemas
-+ Audio
-+ CSS
-+ Default Multimedia Schema
-+ Image
-+ JavaScript
-+ Office PDF document
-+ Videos
-
-#### Metadata Schemas
-+ Code
-+ Page
-+ Structure Group
-
-#### Embeddable Schemas
-+ Embedded Header
-+ Embedded Generic Basic Link Rich Text
-+ Embedded Generic Basic Link
-+ Embedded Image
-+ Embedded Legal
-+ Embedded Media Metadata
-+ Embedded Video Attributes
-+ Embedded Paragraph
-+ Key Value Pair - Rich Text
-+ Key Value Pair Embeddable
-+ Links
-
-#### Content Schemas
-
-+ Generic Body Copy
-+ Generic Article
-+ Generic Call to Action
-+ Generic Image
-+ Generic Video
-+ Generic Link List
-+ Generic Image List
-+ Generic Component List
-+ Generic Video List
-
-### Default Categories
-
-+ Social Media
+### Categories and Keywords
 + Aspect Ratios
++ Devices
++ Social media
+
+
+
 
 ## License:
 
