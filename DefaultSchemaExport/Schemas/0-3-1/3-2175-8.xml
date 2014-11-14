@@ -1,0 +1,131 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Input%20Field.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Generic Input Field</tcm:Title>
+    <tcm:Description>Generic Input Field</tcm:Description>
+    <tcm:Purpose>Component</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:8a3bb0f6-2928-4969-8185-088ffbd029fe</tcm:NamespaceURI>
+    <tcm:RootElementName>formInputField</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:8a3bb0f6-2928-4969-8185-088ffbd029fe" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:category="tcm:0-3-1/Categories.xsd" elementFormDefault="qualified" targetNamespace="uuid:8a3bb0f6-2928-4969-8185-088ffbd029fe">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:import namespace="tcm:0-3-1/Categories.xsd" schemaLocation="/webdav/020%20Global%20Content/Categories.xsd" />
+  <xsd:include schemaLocation="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Form%20Field%20Attributes.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="inputType" Metadata="false">Type of Input</tcm:Label>
+        <tcm:Label ElementName="inputValue" Metadata="false">Default Value</tcm:Label>
+        <tcm:Label ElementName="attributes" Metadata="false">Attributes</tcm:Label>
+        <tcm:Label ElementName="inputMin" Metadata="false">Min (only use if a number or a range)</tcm:Label>
+        <tcm:Label ElementName="inputMax" Metadata="false">Max (only use if a number or range)</tcm:Label>
+        <tcm:Label ElementName="inputStep" Metadata="false">Step (only use if a range)</tcm:Label>
+        <tcm:Label ElementName="presetValidation" Metadata="false">Preset Validation</tcm:Label>
+        <tcm:Label ElementName="customValidation" Metadata="false">Custom Validation Pattern</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="formInputField">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="inputType" minOccurs="0" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:normalizedString">
+              <xsd:enumeration value="text" />
+              <xsd:enumeration value="password" />
+              <xsd:enumeration value="file" />
+              <xsd:enumeration value="checkbox" />
+              <xsd:enumeration value="radio" />
+              <xsd:enumeration value="hidden" />
+              <xsd:enumeration value="number" />
+              <xsd:enumeration value="email" />
+              <xsd:enumeration value="url" />
+              <xsd:enumeration value="tel" />
+              <xsd:enumeration value="date" />
+              <xsd:enumeration value="time" />
+              <xsd:enumeration value="range" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="inputValue" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="attributes" minOccurs="0" maxOccurs="1" type="formFieldAttributes">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Form%20Field%20Attributes.xsd" xlink:title="Form Field Attributes" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="inputMin" minOccurs="0" maxOccurs="1" type="xsd:decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="inputMax" minOccurs="0" maxOccurs="1" type="xsd:decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="inputStep" minOccurs="0" maxOccurs="1" type="xsd:decimal">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="presetValidation" minOccurs="0" maxOccurs="1" type="category:formInputValidations">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">4</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="customValidation" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Content" />
+    <tcccp:Dependency dependencyType="Category" itemType="Category" xpath="tcm:Data/tcm:Xsd/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Form%20Input%20Validations" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:include[1]/@schemaLocation" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Form%20Field%20Attributes.xsd" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:EmbeddedSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Form%20Field%20Attributes.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

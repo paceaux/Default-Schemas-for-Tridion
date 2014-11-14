@@ -1,0 +1,24 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Tridion%2EExtensions%2EContextExpressions%2ETemplates.tbbasm</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation>Binaries\0-3-1\3-58-2048.tbbasm</tcccp:BinaryFileLocation>
+  <tcm:Data>
+    <tcm:Title>Tridion.Extensions.ContextExpressions.Templates</tcm:Title>
+    <tcm:Type>AssemblyTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript />
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+    <tcm:MultimediaFilename>Tridion.Extensions.ContextExpressions.Templates</tcm:MultimediaFilename>
+    <tcm:MultimediaFileSize>12800</tcm:MultimediaFileSize>
+    <tcm:IsExternalMultimediaFile>false</tcm:IsExternalMultimediaFile>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

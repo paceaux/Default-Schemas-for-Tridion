@@ -52,6 +52,185 @@
       </tcccp:Item>
     </tcccp:Item>
   </tcccp:Item>
+  <tcccp:Item title="020%20Global%20Content" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="0-3-1" extension="" subtype="0" type="Publication" selection="ItemAndSelectedChildren">
+    <tcccp:Item title="Building%20Blocks" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-1-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+      <tcccp:Item title="Default%20Templates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+        <tcccp:Item title="Outbound%20E-mail" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-3-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+          <tcccp:Item title="Generate%20Plain%20Text%20E-mail" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-42-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Generate%20Plain%20Text%20E-mail" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-41-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Outbound%20E-mail%20Post-processing" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-44-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Outbound%20E-mail%20Post-processing" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-43-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Outbound%20E-mail%20Pre-processing" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-46-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Outbound%20E-mail%20Pre-processing" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-45-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Set%20Output%20Item%20By%20Email%20Mode" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-47-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Tridion%2EOutboundEmail%2ETemplating%2ETemplates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-40-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        </tcccp:Item>
+        <tcccp:Item title="SDL%20External%20Content%20Library" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-4-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+          <tcccp:Item title="Adjust%20SiteEdit%202009%20markup%20for%20ECL%20items%20V2" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-54-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Adjust%20SiteEdit%202009%20markup%20for%20External%20Content%20Library%20items" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-62-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Adjust%20SiteEdit%202012%20markup%20for%20External%20Content%20Library%20items" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-64-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Adjust%20inline%20editing%20markup%20for%20ECL%20items" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-55-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="External%20Content%20Library%20templating%20assembly" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-53-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Resolve%20ECL%20items%20V2" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-57-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Resolve%20ECL%20items%20V2" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-56-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Resolve%20External%20Content%20Library%20items" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-65-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Search%20External%20Content%20Library%20items" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-63-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Tridion%2EExternalContentLibrary%2ETemplating" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-61-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        </tcccp:Item>
+        <tcccp:Item title="Activate%20Tracking" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-9-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Cleanup%20Template" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-10-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Component%20Query" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-12-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Component%20Query" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-11-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Convert%20Html%20to%20Xml" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-14-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Convert%20Html%20to%20Xml" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-13-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Convert%20Xml%20to%20Html" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-16-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Convert%20Xml%20to%20Html" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-15-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Component%20Template%20for%20UGC" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-51-32" extension="tctcmp" subtype="0" type="ComponentTemplate" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Component%20Template" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-34-32" extension="tctcmp" subtype="0" type="ComponentTemplate" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Dreamweaver%20Component%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-28-2048" extension="dwt" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Dreamweaver%20Page%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-29-2048" extension="dwt" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Finish%20Actions" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-32-2048" extension="tbbcmp" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Finish%20Actions" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-31-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Page%20Template%20for%20UGC" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-52-128" extension="tptcmp" subtype="0" type="PageTemplate" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20Page%20Template" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-33-128" extension="tptcmp" subtype="0" type="PageTemplate" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Default%20UGC%20Dreamweaver%20Template%20design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-50-2048" extension="dwt" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Dreamweaver%20Region%20Selection" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-27-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Enable%20User%20Generated%20Content%20Processing" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-49-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Enable%20inline%20editing%20for%20Page" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-39-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Enable%20inline%20editing%20for%20Page" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-38-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Enable%20inline%20editing%20for%20content" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-37-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Enable%20inline%20editing%20for%20content" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-36-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Extract%20Binaries%20from%20Html" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-18-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Extract%20Binaries%20from%20Html" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-17-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Extract%20Components%20from%20Page" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-19-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Image%20Resizer" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-21-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Image%20Resizer" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-20-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Link%20Resolver" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-23-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Link%20Resolver" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-22-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Publish%20Binaries%20in%20Package" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-25-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Publish%20Binaries%20in%20Package" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-24-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Sample%20XSLT%20Component%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-30-2048" extension="xslt" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Target%20Group%20Personalization" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-26-2048" extension="tbbcs" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Tridion%2EExtensions%2EContextExpressions%2ETemplates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-58-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Tridion%2ESiteEdit%2ETemplating" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-35-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Tridion%2EUgc%2ETemplating%2EDefaultTemplates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-48-2048" extension="tbbasm" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+      </tcccp:Item>
+      <tcccp:Item title="System" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-6-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+        <tcccp:Item title="Component%20Templates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-27-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Page%20Templates" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-26-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+        <tcccp:Item title="Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-7-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+          <tcccp:Item title="Bundle%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-1040-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Legal%20Bundle" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2147-8" extension="xsd" subtype="7" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Content" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-10-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Generic%20Article" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-92-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Button%20Field" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2185-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Call%20to%20Action" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2169-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Content" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-93-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20External%20Link" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2168-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Form" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2179-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Image%20List" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2167-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Image" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-102-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Input%20Field" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2175-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Link%20List" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2170-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Select%20Box%20Field" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2177-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Textarea%20Field" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2176-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Video%20List" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-78-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Generic%20Video" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-77-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Embeddable%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-13-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Assets" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2155-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Code" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2160-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Document%20Attributes" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2162-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Form%20Field%20Attributes" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2171-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Form%20Fieldset" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2178-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Header" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-74-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Image%20Attributes" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-75-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Image" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-91-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Key%20Value%20Pair%20-%20Plain%20Text" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-79-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Key%20Value%20Pair%20-%20Rich%20Text" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-70-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Legal" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-73-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Link%20List" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2159-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Link" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2120-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Navigation" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2156-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Paragraph" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-67-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Video%20Attributes" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-66-8" extension="xsd" subtype="2" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Metadata%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-11-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Code%20Metadata" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-106-8" extension="xsd" subtype="3" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="DD4T%20Metadata%20Schema" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-113-8" extension="xsd" subtype="3" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Page%20Metadata" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-85-8" extension="xsd" subtype="3" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Structure%20Group%20Metadata" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-69-8" extension="xsd" subtype="3" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Multimedia%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-8-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Audio" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2164-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="CSS" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-83-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Default%20Multimedia%20Schema" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-59-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Document" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2163-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Flash%20Video" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2166-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="HTML5%20Video" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2165-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Image" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2161-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="JavaScript" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-84-8" extension="xsd" subtype="1" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Parameter%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-14-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Item%20Uri" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-89-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Publish%20Binaries%20to%20Specific%20Locations" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-80-8" extension="xsd" subtype="6" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="System%20Schemas" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-9-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Code" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-101-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Dummy" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-107-8" extension="xsd" subtype="0" type="Schema" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+        </tcccp:Item>
+        <tcccp:Item title="Template%20Building%20Blocks" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-17-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+          <tcccp:Item title="%2ENet%20TBBs" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-24-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+          <tcccp:Item title="C%23%20Fragments" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-20-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+          <tcccp:Item title="Dreamweaver%20TBBs" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-18-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Component%20DWT%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-19-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+              <tcccp:Item title="Code%20Snippet%20DWT" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-108-2048" extension="dwt" subtype="0" type="TemplateBuildingBlock" selection="ItemAndAllChildren" />
+            </tcccp:Item>
+            <tcccp:Item title="Page%20DWT%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-22-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+          <tcccp:Item title="Razor%20TBBs" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-21-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
+            <tcccp:Item title="Component%20Razor%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-23-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+            <tcccp:Item title="Page%20Razor%20Design" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-25-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
+          </tcccp:Item>
+        </tcccp:Item>
+      </tcccp:Item>
+    </tcccp:Item>
+    <tcccp:Item title="Categories%20and%20Keywords" isSysItem="false" isExported="false" blueprintStatus="LocalItem" uri="0-0-0" extension="" subtype="0" type="VirtualItemCategoriesAndKeywords" selection="ItemAndAllChildren">
+      <tcccp:Item title="Social%20Media" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-16-512" extension="" subtype="0" type="Category" selection="ItemAndAllChildren">
+        <tcccp:Item title="facebook" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-109-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="foursquare" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-103-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="googleplus" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-99-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="linkedin" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-68-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="twitter" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-86-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+      </tcccp:Item>
+      <tcccp:Item title="Devices" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-1038-512" extension="" subtype="0" type="Category" selection="ItemAndAllChildren">
+        <tcccp:Item title="Desktop" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2157-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="phablet" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2144-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="phone" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2143-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="tablet" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-2145-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+      </tcccp:Item>
+      <tcccp:Item title="Form%20Input%20Validations" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-1047-512" extension="" subtype="0" type="Category" selection="ItemAndAllChildren">
+        <tcccp:Item title="SSN" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="3-2194-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="email" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="3-2190-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="phone" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="3-2193-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="url" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="3-2191-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="username" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="3-2192-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+      </tcccp:Item>
+      <tcccp:Item title="Aspect%20Ratios" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-15-512" extension="" subtype="0" type="Category" selection="ItemAndAllChildren">
+        <tcccp:Item title="1%3A1" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-87-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="16%3A9" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-72-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="3%3A2" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-71-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="4%3A3" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-104-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="5%3A3" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-100-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+        <tcccp:Item title="5%3A4" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-81-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
+      </tcccp:Item>
+    </tcccp:Item>
+    <tcccp:Item title="Workflow" isSysItem="false" isExported="false" blueprintStatus="LocalItem" uri="0-0-0" extension="" subtype="0" type="VirtualItemWorkflow" selection="None">
+      <tcccp:Item title="Task%20Process" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="3-1-131074" extension="tpd" subtype="0" type="ProcessDefinition" selection="None" />
+    </tcccp:Item>
+  </tcccp:Item>
   <tcccp:Item title="000%20Empty%20Parent" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="0-1-1" extension="" subtype="0" type="Publication" selection="ItemAndAllChildren">
     <tcccp:Item title="Building%20Blocks" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="1-1-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren">
       <tcccp:Item title="Content" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="1-12-2" extension="" subtype="0" type="Folder" selection="ItemAndAllChildren" />
@@ -305,6 +484,7 @@
         <tcccp:Item title="5%3A3" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="2-100-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
         <tcccp:Item title="5%3A4" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="2-81-1024" extension="tkw" subtype="0" type="Keyword" selection="ItemAndAllChildren" />
       </tcccp:Item>
+      <tcccp:Item title="Form%20Input%20Validations" isSysItem="false" isExported="true" blueprintStatus="LocalItem" uri="2-1047-512" extension="" subtype="0" type="Category" selection="ItemAndAllChildren" />
     </tcccp:Item>
     <tcccp:Item title="Workflow" isSysItem="false" isExported="false" blueprintStatus="LocalItem" uri="0-0-0" extension="" subtype="0" type="VirtualItemWorkflow" selection="ItemAndAllChildren">
       <tcccp:Item title="Task%20Process" isSysItem="false" isExported="true" blueprintStatus="SharedItem" uri="2-1-131074" extension="tpd" subtype="0" type="ProcessDefinition" selection="ItemAndAllChildren" />

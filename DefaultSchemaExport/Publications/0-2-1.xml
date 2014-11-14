@@ -54,6 +54,22 @@
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
+        <xsd:simpleType name="_formInputValidations">
+          <xsd:restriction base="xsd:string" />
+        </xsd:simpleType>
+        <xsd:complexType name="formInputValidations">
+          <xsd:annotation>
+            <xsd:documentation>Form Input Validations</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleContent>
+            <xsd:extension base="category:_formInputValidations">
+              <xsd:attribute ref="category:CategoryURI" use="optional" fixed="tcm:2-1047-512" />
+              <xsd:attribute ref="xlink:type" use="optional" fixed="simple" />
+              <xsd:attribute ref="xlink:href" use="optional" />
+              <xsd:attribute ref="xlink:title" use="optional" />
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
         <xsd:complexType name="socialMedia">
           <xsd:annotation>
             <xsd:documentation>Social Media</xsd:documentation>
