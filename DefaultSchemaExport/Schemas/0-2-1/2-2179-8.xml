@@ -19,6 +19,7 @@
       <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
         <tcm:Label ElementName="header" Metadata="false">Header</tcm:Label>
         <tcm:Label ElementName="fieldsets" Metadata="false">Fieldsets</tcm:Label>
+        <tcm:Label ElementName="formAction" Metadata="false">Form Action</tcm:Label>
       </tcm:Labels>
     </xsd:appinfo>
   </xsd:annotation>
@@ -28,7 +29,7 @@
         <xsd:element name="header" minOccurs="0" maxOccurs="1" type="header">
           <xsd:annotation>
             <xsd:appinfo>
-              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
               <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Header.xsd" xlink:title="Header" />
             </xsd:appinfo>
           </xsd:annotation>
@@ -36,8 +37,15 @@
         <xsd:element name="fieldsets" minOccurs="0" maxOccurs="unbounded" type="formFieldset">
           <xsd:annotation>
             <xsd:appinfo>
-              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
               <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Form%20Fieldset.xsd" xlink:title="Form Fieldset" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="formAction" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
             </xsd:appinfo>
           </xsd:annotation>
         </xsd:element>

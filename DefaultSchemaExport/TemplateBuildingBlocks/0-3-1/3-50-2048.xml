@@ -1,0 +1,172 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Default%20UGC%20Dreamweaver%20Template%20design.dwt</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Default UGC Dreamweaver Template design</tcm:Title>
+    <tcm:Type>DreamweaverTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript>&lt;!-- TemplateBeginIf cond="Page.ID != null" --&gt;
+	&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+	&lt;html xmlns="http://www.w3.org/1999/xhtml" xmlns:tridion="http://www.tridion.com/ContentManager/5.0"&gt;
+	&lt;head&gt;
+		&lt;!-- TemplateParam name="Page" type="boolean" value="true" --&gt;
+		&lt;title&gt;@@Page.Title@@&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body style="font-family: Verdana; margin:0; padding:0; border:0;" &gt;
+		&lt;h1 style="text-align: left; background-color:#FFFFFF; font-size:large; margin-left:2%; padding:0; border:0;"&gt;
+			Page '@@Page.Title@@'
+		&lt;/h1&gt;
+		&lt;h2 style="text-align: left; background-color:#FFFFFF; margin-left:2%; padding:0; border:0; font-size:medium; color:#2972CC;" &gt;
+			&lt;strong&gt;Components&lt;/strong&gt;
+		&lt;/h2&gt;
+	    &lt;!-- TemplateBeginRepeat name="Components" --&gt;
+			&lt;div&gt;@@RenderComponentPresentation()@@&lt;/div&gt;
+		&lt;!-- TemplateEndRepeat --&gt;
+&lt;!-- TemplateEndIf --&gt;    
+
+	&lt;!-- Ratings Section --&gt;
+		&lt;hr /&gt;
+		&lt;!-- TemplateBeginIf cond="allowtorate == 'True'" --&gt;
+			&lt;tcdl:PostRating itemURI="@@itemId@@" postParameter="ratingValue@@itemId@@"&gt;
+				&lt;tcdl:ItemStats itemURI="@@itemId@@"&gt;
+					Rating: &lt;tcdl:ContextVariable var="ugcItemStats.averageRating"/&gt; (&lt;tcdl:ContextVariable var="ugcItemStats.numberOfRatings"/&gt; ratings)&lt;br/&gt;
+				&lt;/tcdl:ItemStats&gt;
+				
+				&lt;form method="post" id="ratingForm"&gt;
+					Rate:
+						&lt;select name="ratingValue@@itemId@@" size="1"&gt;
+							&lt;option value="1"&gt;1&lt;/option&gt;
+							&lt;option value="2"&gt;2&lt;/option&gt;
+							&lt;option value="3"&gt;3&lt;/option&gt;
+							&lt;option value="4"&gt;4&lt;/option&gt;
+							&lt;option value="5" selected="true"&gt;5&lt;/option&gt;
+						&lt;/select&gt;
+					&lt;input type="submit" value="Rate!"/&gt;
+				&lt;/form&gt;
+			&lt;/tcdl:PostRating&gt;
+		&lt;!-- TemplateEndIf --&gt;
+
+		&lt;!-- TemplateBeginIf cond="allowtocomment == 'True'" --&gt;
+			&lt;tcdl:ManageComments itemURI="@@itemId@@" postParameter="addComment@@itemId@@" usernameParameter="username@@itemId@@" emailParameter="email@@itemId@@" editParameter="editComment@@itemId@@" commentIdParameter="commentId@@itemId@@" removeParameter="removeComment@@itemId@@"&gt;
+		&lt;!-- TemplateEndIf --&gt;
+		
+		&lt;!-- Display comments section --&gt;
+		&lt;!-- TemplateBeginIf cond="showcomments == 'True'" --&gt;
+			&lt;h4&gt;Comments:&lt;/h4&gt;
+				&lt;tcdl:VoteComment voteParameter="vote@@itemId@@" commentIdParameter="commentId@@itemId@@"&gt;
+					&lt;!-- TemplateBeginIf cond="showunmoderatedcomments == 'True'" --&gt;
+					&lt;!-- Show all comments (including unmoderated comments) --&gt;
+					&lt;tcdl:Comments itemURI="@@itemId@@"&gt;
+					&lt;!-- TemplateEndIf --&gt;
+					&lt;!-- TemplateBeginIf cond="showunmoderatedcomments == 'False'" --&gt;
+					&lt;!-- Show only moderated comments --&gt;
+					&lt;tcdl:Comments itemURI="@@itemId@@" submitted="false" flaggedForModeration="false" posted="true" resubmitted="false"&gt;
+					&lt;!-- TemplateEndIf --&gt;
+						&lt;ol&gt;
+							&lt;tcdl:ForEachComment&gt;
+								&lt;li&gt;
+									Author: &lt;tcdl:ContextVariable var="ugcComment.user.name"/&gt;&lt;br/&gt;
+
+									&lt;!-- TemplateBeginIf cond="allowtocomment == 'True'" --&gt;
+										&lt;tcdl:Choose&gt;
+											&lt;tcdl:When test="ugcUserId equals ugcComment.user.id"&gt; 
+												&lt;form method="post" id="editCommentForm"&gt;
+													&lt;input type="hidden" name="commentId@@itemId@@" value="&lt;tcdl:ContextVariable var='ugcComment.id'/&gt;"/&gt;
+													&lt;textarea rows="4" cols="30" name="editComment@@itemId@@"&gt;&lt;tcdl:ContextVariable var="ugcComment.content"/&gt;&lt;/textarea&gt;&lt;br/&gt;
+													&lt;input type="submit" value="Save comment"/&gt;
+												&lt;/form&gt;
+												&lt;form method="post" id="removeCommentForm" style="display: inline"&gt;
+													&lt;input type="hidden" name="removeComment@@itemId@@" value="&lt;tcdl:ContextVariable var='ugcComment.id'/&gt;"/&gt;
+													&lt;input type="submit" value="Remove comment"/&gt;
+												&lt;/form&gt;
+											&lt;/tcdl:When&gt; 
+											&lt;tcdl:Otherwise&gt; 
+									&lt;!-- TemplateEndIf --&gt;
+												&lt;tcdl:ContextVariable var="ugcComment.content"/&gt;
+									&lt;!-- TemplateBeginIf cond="allowtocomment == 'True'" --&gt;
+											&lt;/tcdl:Otherwise&gt; 
+										&lt;/tcdl:Choose&gt;
+									&lt;!-- TemplateEndIf --&gt;
+									&lt;br/&gt;
+									
+									Comment score: &lt;tcdl:ContextVariable var="ugcComment.score"/&gt;
+									&lt;form method="post" id="like" style="display: inline"&gt;
+										&lt;input type="hidden" name="commentId@@itemId@@" value="&lt;tcdl:ContextVariable var='ugcComment.id'/&gt;"/&gt;
+										&lt;input type="hidden" name="vote@@itemId@@" value="up"&gt;
+										&lt;input type="submit" value="Like"&gt;
+									&lt;/form&gt;
+									&lt;form method="post" id="dislike" style="display: inline"&gt;
+										&lt;input type="hidden" name="commentId@@itemId@@" value="&lt;tcdl:ContextVariable var='ugcComment.id'/&gt;"/&gt;
+										&lt;input type="hidden" name="vote@@itemId@@" value="down"&gt;
+										&lt;input type="submit" value="Dislike"&gt;
+									&lt;/form&gt;
+								&lt;/li&gt;
+							&lt;/tcdl:ForEachComment&gt;
+						&lt;/ol&gt;
+					&lt;/tcdl:Comments&gt;
+				&lt;/tcdl:VoteComment&gt;
+		&lt;!-- TemplateEndIf --&gt;
+		&lt;!-- TemplateBeginIf cond="showcomments == 'False'" --&gt;
+			&lt;p&gt;Comments will not be shown for this article&lt;/p&gt;
+		&lt;!-- TemplateEndIf --&gt;
+
+		&lt;!-- Send comments section --&gt;
+		&lt;!-- TemplateBeginIf cond="allowtocomment == 'True'" --&gt;
+				&lt;form method="post" id="commentForm"&gt;
+					&lt;table border="0"&gt;
+						&lt;tr&gt;
+							&lt;td&gt;
+								&lt;label for="newCommentName"&gt;Name:&lt;/label&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;input id="newCommentName" type="text" name="username@@itemId@@" value=""/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;
+								&lt;label for="newCommentEmail"&gt;Email:&lt;/label&gt;
+							&lt;/td&gt;
+							&lt;td&gt;
+								&lt;input id="newCommentEmail" type="text" name="email@@itemId@@" value=""/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td colspan="2"&gt;
+								&lt;label for="newCommentText"&gt;Enter comment:&lt;/label&gt;&lt;br/&gt;
+								&lt;textarea id="newCommentText" rows="4" cols="30" name="addComment@@itemId@@"&gt;&lt;/textarea&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td colspan="2"&gt;
+								&lt;input type="submit" name="B1" value="Submit"/&gt;
+								&lt;input type="reset" name="B2" value="Reset"/&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/table&gt;
+				&lt;/form&gt;
+			&lt;/tcdl:ManageComments&gt;
+		&lt;!-- TemplateEndIf --&gt;
+		
+		&lt;!-- TemplateBeginIf cond="allowtocomment == 'False'" --&gt;
+			&lt;p&gt;It is not allowed to leave comments for this article&lt;/p&gt;
+		&lt;!-- TemplateEndIf --&gt;
+		
+&lt;!-- TemplateBeginIf cond="Page.ID != null" --&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
+&lt;!-- TemplateEndIf --&gt;
+</tcm:PublisherScript>
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

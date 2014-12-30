@@ -25,12 +25,12 @@
   <xsd:element name="buttonField">
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element name="buttonType" minOccurs="0" maxOccurs="1">
+        <xsd:element name="buttonType" minOccurs="1" maxOccurs="1">
           <xsd:annotation>
             <xsd:appinfo>
               <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
-              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
-              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">2</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">radio</tcm:listtype>
             </xsd:appinfo>
           </xsd:annotation>
           <xsd:simpleType>

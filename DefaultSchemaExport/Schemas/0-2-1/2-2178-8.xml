@@ -58,6 +58,7 @@
               <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Input%20Field.xsd" xlink:title="Generic Input Field" />
               <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Select%20Box%20Field.xsd" xlink:title="Generic Select Box Field" />
               <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Textarea%20Field.xsd" xlink:title="Generic Textarea Field" />
+              <tcm:TargetSchema xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Button%20Field.xsd" xlink:title="Generic Button Field" />
             </tcm:AllowedTargetSchemas>
           </xsd:appinfo>
         </xsd:annotation>
@@ -78,6 +79,7 @@
     <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Input%20Field.xsd" />
     <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[2]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Select%20Box%20Field.xsd" />
     <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[3]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Textarea%20Field.xsd" />
+    <tcccp:Dependency dependencyType="SchemaAllowedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[3]/xsd:annotation[1]/xsd:appinfo[1]/tcm:AllowedTargetSchemas[1]/tcm:TargetSchema[4]/@xlink:href" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Content/Generic%20Button%20Field.xsd" />
     <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
   </tcccp:Dependencies>
 </tcccp:Item>

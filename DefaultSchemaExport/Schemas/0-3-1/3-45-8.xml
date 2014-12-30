@@ -1,0 +1,67 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Outbound%20E-mail/Outbound%20E-mail%20Pre-processing.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Outbound E-mail Pre-processing</tcm:Title>
+    <tcm:Description>Outbound E-mail Pre-processing</tcm:Description>
+    <tcm:Purpose>TemplateParameters</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:81C64ADD-4698-4C2E-AB87-473EC0711DCE</tcm:NamespaceURI>
+    <tcm:RootElementName>Parameters</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns="uuid:81C64ADD-4698-4C2E-AB87-473EC0711DCE" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="uuid:81C64ADD-4698-4C2E-AB87-473EC0711DCE">
+        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+        <xsd:annotation>
+          <xsd:appinfo>
+            <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+              <tcm:Label ElementName="UnsubscribeQueryString" Metadata="false">Unsubscribe Query String</tcm:Label>
+              <tcm:Label ElementName="ChangeProfileQueryString" Metadata="false">Change Profile Query String</tcm:Label>
+              <tcm:Label ElementName="ConfirmUrlQueryString" Metadata="false">Confirm Url Query String</tcm:Label>
+            </tcm:Labels>
+          </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:element name="Parameters">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="UnsubscribeQueryString" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/OutboundEmailPreProcessing.html#UnsubscribeQueryString</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="ChangeProfileQueryString" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/OutboundEmailPreProcessing.html#ChangeProfileQueryString</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="ConfirmUrlQueryString" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/OutboundEmailPreProcessing.html#ConfirmUrlQueryString</tcm:CustomURL>
+                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Default%20Templates/Outbound%20E-mail" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

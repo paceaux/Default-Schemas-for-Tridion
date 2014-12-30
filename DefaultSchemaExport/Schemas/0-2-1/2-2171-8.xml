@@ -16,6 +16,7 @@
     <xsd:appinfo>
       <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
         <tcm:Label ElementName="label" Metadata="false">Label</tcm:Label>
+        <tcm:Label ElementName="name" Metadata="false">Name (use for connecting radio buttons)</tcm:Label>
         <tcm:Label ElementName="placeholder" Metadata="false">Placeholder</tcm:Label>
         <tcm:Label ElementName="required" Metadata="false">required</tcm:Label>
         <tcm:Label ElementName="disabled" Metadata="false">Disabled</tcm:Label>
@@ -29,7 +30,14 @@
       <xsd:element name="label" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
         <xsd:annotation>
           <xsd:appinfo>
-            <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
+          </xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="name" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+        <xsd:annotation>
+          <xsd:appinfo>
+            <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
           </xsd:appinfo>
         </xsd:annotation>
       </xsd:element>
@@ -40,13 +48,13 @@
           </xsd:appinfo>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="required" minOccurs="0" maxOccurs="1">
+      <xsd:element name="required" minOccurs="1" maxOccurs="1">
         <xsd:annotation>
           <xsd:appinfo>
             <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
             <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:DefaultTextValue>
-            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
-            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">2</tcm:Size>
+            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">radio</tcm:listtype>
           </xsd:appinfo>
         </xsd:annotation>
         <xsd:simpleType>
@@ -56,12 +64,13 @@
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
-      <xsd:element name="disabled" minOccurs="0" maxOccurs="1">
+      <xsd:element name="disabled" minOccurs="1" maxOccurs="1">
         <xsd:annotation>
           <xsd:appinfo>
             <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
-            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
-            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:DefaultTextValue>
+            <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">2</tcm:Size>
+            <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">radio</tcm:listtype>
           </xsd:appinfo>
         </xsd:annotation>
         <xsd:simpleType>

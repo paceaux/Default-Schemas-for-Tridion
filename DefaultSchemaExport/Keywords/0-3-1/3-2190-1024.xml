@@ -1,0 +1,21 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>email</tcm:Title>
+    <tcm:Description>email</tcm:Description>
+    <tcm:Key>/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/</tcm:Key>
+    <tcm:IsAbstract>false</tcm:IsAbstract>
+    <tcm:ParentKeywords />
+    <tcm:RelatedKeywords />
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+    <tcm:IsRoot>true</tcm:IsRoot>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemCategory" itemType="Category" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Form%20Input%20Validations" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>
