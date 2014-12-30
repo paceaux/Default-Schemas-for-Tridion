@@ -1,0 +1,273 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Sample%20XSLT%20Component%20Design.xslt</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Sample XSLT Component Design</tcm:Title>
+    <tcm:Type>XsltTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:ms="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="tcm xsl xlink tcmi xsd xhtml ms"&gt;	
+	
+	&lt;xsl:output method="html" indent="yes" omit-xml-declaration="no" doctype-public="-//W3C//DTD XHTML 1.0 STRICT//EN" /&gt;
+	
+	&lt;!-- Non multimedia component , based on Tridion Web Schema --&gt;
+	&lt;xsl:template match="tcm:Component[tcm:Data/tcm:MultimediaType/@xlink:href='tcm:0-0-0' and tcm:Data/tcm:IsBasedOnTridionWebSchema/text()='true']"&gt;
+		&lt;table border="0" cellspacing="0"&gt;
+			&lt;xsl:call-template name="ComponentHeader"&gt;
+				&lt;xsl:with-param name="Component" select="/tcm:Component" /&gt;
+			&lt;/xsl:call-template&gt;
+			&lt;xsl:call-template name="Fields"&gt;
+				&lt;xsl:with-param name="Fields" select="tcm:Data/tcm:Content/*" /&gt;
+				&lt;xsl:with-param name="Schema" select="document(tcm:Data/tcm:Schema/@xlink:href)/*" /&gt;
+			&lt;/xsl:call-template&gt;
+			&lt;xsl:call-template name="Fields"&gt;
+				&lt;xsl:with-param name="Fields" select="tcm:Data/tcm:Metadata/*" /&gt;
+				&lt;xsl:with-param name="Schema" select="document(tcm:Data/tcm:Schema/@xlink:href)/*" /&gt;
+				&lt;xsl:with-param name="Mode"&gt;1&lt;/xsl:with-param&gt;
+			&lt;/xsl:call-template&gt;
+		&lt;/table&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;!-- Non multimedia component , based on Complex Schema --&gt;
+	&lt;xsl:template match="tcm:Component[tcm:Data/tcm:MultimediaType/@xlink:href='tcm:0-0-0' and tcm:Data/tcm:IsBasedOnTridionWebSchema/text()!='true']"&gt;
+		&lt;table border="0" cellspacing="0"&gt;
+			&lt;xsl:call-template name="ComponentHeader"&gt;
+				&lt;xsl:with-param name="Component" select="/tcm:Component" /&gt;
+			&lt;/xsl:call-template&gt;
+			&lt;tr bgcolor="#cccccc"&gt;
+				&lt;td colspan="2"&gt;
+					&lt;pre&gt;
+						&lt;xsl:copy-of select="tcm:Data/tcm:Content/*" /&gt;
+					&lt;/pre&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;!-- Multimedia component  --&gt;
+	&lt;xsl:template match="tcm:Component[tcm:Data/tcm:MultimediaType/@xlink:href!='tcm:0-0-0']"&gt;
+		&lt;table border="0" cellspacing="0"&gt;
+			&lt;xsl:call-template name="ComponentHeader"&gt;
+				&lt;xsl:with-param name="Component" select="/tcm:Component" /&gt;
+			&lt;/xsl:call-template&gt;
+			&lt;xsl:call-template name="Fields"&gt;
+				&lt;xsl:with-param name="Fields" select="tcm:Data/tcm:Metadata/*" /&gt;
+				&lt;xsl:with-param name="Schema" select="document(tcm:Data/tcm:Schema/@xlink:href)/*" /&gt;
+				&lt;xsl:with-param name="Mode"&gt;1&lt;/xsl:with-param&gt;
+			&lt;/xsl:call-template&gt;
+		&lt;/table&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;!-- basic fields --&gt;
+	&lt;xsl:template name="Fields"&gt;
+		&lt;xsl:param name="Fields" /&gt;
+		&lt;xsl:param name="Schema" /&gt;
+		&lt;xsl:param name="Mode"&gt;0&lt;/xsl:param&gt;
+		&lt;xsl:variable name="RootElemName" select="$Schema/tcm:Data/tcm:RootElementName" /&gt;
+		&lt;xsl:if test="$Mode='0'"&gt;
+			&lt;xsl:element name="tr"&gt;
+				&lt;xsl:attribute name="bgcolor"&gt;
+					&lt;xsl:text&gt;#bbbbbb&lt;/xsl:text&gt;
+				&lt;/xsl:attribute&gt;
+				&lt;td colspan="2"&gt;
+					&lt;b&gt;
+						&lt;xsl:text&gt;Component Fields&lt;/xsl:text&gt;
+					&lt;/b&gt;
+				&lt;/td&gt;
+			&lt;/xsl:element&gt;
+				&lt;xsl:apply-templates select="$Schema/tcm:Data/tcm:XSD/xsd:schema/xsd:element[@name=$RootElemName]//xsd:element"&gt;
+					&lt;xsl:with-param name="Fields" select="$Fields" /&gt;
+					&lt;xsl:with-param name="Labels" select="$Schema/tcm:Data/tcm:XSD/xsd:schema/xsd:annotation[position()=1]/xsd:appinfo/tcm:Labels" /&gt;
+				&lt;/xsl:apply-templates&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:if test="$Mode='1'"&gt;
+			&lt;xsl:element name="tr"&gt;
+				&lt;xsl:attribute name="bgcolor"&gt;
+					&lt;xsl:text&gt;#cccccc&lt;/xsl:text&gt;
+				&lt;/xsl:attribute&gt;
+				&lt;td colspan="2"&gt;
+					&lt;b&gt;
+						&lt;xsl:text&gt;Metadata Fields&lt;/xsl:text&gt;
+					&lt;/b&gt;
+				&lt;/td&gt;
+			&lt;/xsl:element&gt;
+				&lt;xsl:apply-templates select="$Schema/tcm:Data/tcm:XSD/xsd:schema/xsd:element[@name='Metadata']//xsd:element"&gt;
+					&lt;xsl:with-param name="Fields" select="$Fields" /&gt;
+					&lt;xsl:with-param name="Labels" select="$Schema/tcm:Data/tcm:XSD/xsd:schema/xsd:annotation[position()=1]/xsd:appinfo/tcm:Labels" /&gt;
+				&lt;/xsl:apply-templates&gt;
+		&lt;/xsl:if&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;!-- Read from schema, and fill in the fields content and labels --&gt;
+	&lt;xsl:template match="xsd:element"&gt;
+		&lt;xsl:param name="Fields" /&gt;
+		&lt;xsl:param name="Labels" /&gt;
+		&lt;xsl:variable name="FieldName" select="@name" /&gt;
+		&lt;xsl:variable name="CurrentField" select="$Fields/*[local-name()=$FieldName]" /&gt;
+		&lt;xsl:element name="tr"&gt;
+			&lt;!-- Flip Flop background colours per row--&gt;
+			&lt;xsl:attribute name="bgcolor"&gt;
+				&lt;xsl:if test="position() mod 2 = 0"&gt;
+					&lt;xsl:text&gt;#dddddd&lt;/xsl:text&gt;
+				&lt;/xsl:if&gt;
+				&lt;xsl:if test="position() mod 2 = 1"&gt;
+					&lt;xsl:text&gt;#eeeeee&lt;/xsl:text&gt;
+				&lt;/xsl:if&gt;
+			&lt;/xsl:attribute&gt;
+			&lt;!-- Display the field description --&gt;
+			&lt;td&gt;
+				&lt;xsl:value-of select="$Labels/*[@ElementName=$FieldName]/text()" /&gt;
+			&lt;/td&gt;
+			&lt;!-- display the content of the field --&gt;
+			&lt;td&gt;
+				&lt;xsl:choose&gt;
+					&lt;!-- Rich Text field --&gt;
+					&lt;xsl:when test="@type='tcmi:XHTML'"&gt;
+						&lt;xsl:apply-templates select="$CurrentField/xhtml:* | $CurrentField/text()" /&gt;
+					&lt;/xsl:when&gt;
+					&lt;!-- Component link field --&gt;
+					&lt;xsl:when test="@type='tcmi:SimpleLink'"&gt;
+						&lt;xsl:choose&gt;
+							&lt;xsl:when test="xsd:annotation/xsd:appinfo/tcm:linktype='ExternalLink'"&gt;
+								&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+									&lt;xsl:element name="a"&gt;
+										&lt;xsl:attribute name="href"&gt;&lt;xsl:value-of select="@xlink:href" /&gt;&lt;/xsl:attribute&gt;
+										&lt;xsl:value-of select="@xlink:href" /&gt;
+									&lt;/xsl:element&gt;
+									&lt;br /&gt;
+								&lt;/xsl:for-each&gt;
+							&lt;/xsl:when&gt;
+							&lt;xsl:when test="xsd:annotation/xsd:appinfo/tcm:linktype='MultimediaLink'"&gt;
+								&lt;table border="1"&gt;
+									&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+										&lt;xsl:variable name="MMComp" select="document(@xlink:href)/tcm:Component" /&gt;
+										&lt;tr bgcolor="#ffffff"&gt;
+											&lt;td colspan="2"&gt;
+												&lt;b&gt;
+													&lt;xsl:text&gt;Multimedia Component&lt;/xsl:text&gt;
+												&lt;/b&gt;
+											&lt;/td&gt;
+										&lt;/tr&gt;
+										&lt;xsl:call-template name="ComponentHeader"&gt;
+											&lt;xsl:with-param name="Component" select="$MMComp" /&gt;
+										&lt;/xsl:call-template&gt;
+									&lt;/xsl:for-each&gt;
+								&lt;/table&gt;
+							&lt;/xsl:when&gt;
+							&lt;xsl:otherwise&gt;
+								&lt;table border="1"&gt;
+									&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+										&lt;xsl:variable name="LinkedComponent" select="document(@xlink:href)/tcm:Component" /&gt;
+										&lt;tr bgcolor="#ffffff"&gt;
+											&lt;td colspan="2"&gt;
+												&lt;b&gt;
+													&lt;xsl:text&gt;Linked Component&lt;/xsl:text&gt;
+												&lt;/b&gt;
+											&lt;/td&gt;
+										&lt;/tr&gt;
+										&lt;xsl:call-template name="ComponentHeader"&gt;
+											&lt;xsl:with-param name="Component" select="$LinkedComponent" /&gt;
+										&lt;/xsl:call-template&gt;
+									&lt;/xsl:for-each&gt;
+								&lt;/table&gt;
+							&lt;/xsl:otherwise&gt;
+						&lt;/xsl:choose&gt;
+					&lt;/xsl:when&gt;
+					&lt;!-- Multiline text field --&gt;
+					&lt;xsl:when test="@type='tcmi:MultiLineText'"&gt;
+						&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+							&lt;xsl:call-template name="entertobreak"&gt;
+								&lt;xsl:with-param name="stringval" select="." /&gt;
+							&lt;/xsl:call-template&gt;
+							&lt;br /&gt;
+						&lt;/xsl:for-each&gt;
+					&lt;/xsl:when&gt;
+					&lt;!-- DateTime field --&gt;
+					&lt;xsl:when test="@type='xsd:dateTime'"&gt;
+						&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+							&lt;xsl:value-of select="ms:format-date(., 'MMM dd, yyyy')" /&gt;&lt;xsl:if test="position()!=last()"&gt;&lt;br /&gt;&lt;/xsl:if&gt;
+						&lt;/xsl:for-each&gt;
+					&lt;/xsl:when&gt;
+					&lt;xsl:when test="xsd:annotation/xsd:appinfo/tcm:EmbeddedSchema"&gt;
+						&lt;table border="1"&gt;
+							&lt;tr bgcolor="#ffffff"&gt;
+								&lt;td colspan="2"&gt;
+									&lt;b&gt;
+										&lt;xsl:text&gt;Embedded Schema&lt;/xsl:text&gt;
+									&lt;/b&gt;
+								&lt;/td&gt;
+							&lt;/tr&gt;
+								&lt;xsl:variable name="emschema" select="document(xsd:annotation/xsd:appinfo/tcm:EmbeddedSchema/@xlink:href)/*" /&gt;
+								&lt;xsl:variable name="emrootelemname" select="$emschema/tcm:Data/tcm:RootElementName/text()" /&gt;
+								&lt;xsl:if test="@maxOccurs='1'"&gt;
+									&lt;xsl:apply-templates select="$emschema/tcm:Data/tcm:XSD/xsd:schema/xsd:complexType[@name=$emrootelemname]//xsd:element"&gt;
+										&lt;xsl:with-param name="Fields" select="$Fields/*[local-name()=$FieldName]" /&gt;
+										&lt;xsl:with-param name="Labels" select="$emschema/tcm:Data/tcm:XSD/xsd:schema/xsd:annotation[position()=1]/xsd:appinfo/tcm:Labels" /&gt;
+									&lt;/xsl:apply-templates&gt;
+								&lt;/xsl:if&gt;
+								&lt;xsl:if test="@maxOccurs='unbounded'"&gt;
+									&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+										&lt;xsl:apply-templates select="$emschema/tcm:Data/tcm:XSD/xsd:schema/xsd:complexType[@name=$emrootelemname]//xsd:element"&gt;
+											&lt;xsl:with-param name="Fields" select="." /&gt;
+											&lt;xsl:with-param name="Labels" select="$emschema/tcm:Data/tcm:XSD/xsd:schema/xsd:annotation[position()=1]/xsd:appinfo/tcm:Labels" /&gt;
+										&lt;/xsl:apply-templates&gt;
+									&lt;/xsl:for-each&gt;
+								&lt;/xsl:if&gt;
+						&lt;/table&gt;
+					&lt;/xsl:when&gt;
+					&lt;xsl:otherwise&gt;
+						&lt;xsl:for-each select="$Fields/*[local-name()=$FieldName]"&gt;
+							&lt;xsl:value-of select="." /&gt;&lt;xsl:if test="position()!=last()"&gt;&lt;br /&gt;&lt;/xsl:if&gt;
+						&lt;/xsl:for-each&gt;
+					&lt;/xsl:otherwise&gt;
+				&lt;/xsl:choose&gt;
+			&lt;/td&gt;
+		&lt;/xsl:element&gt;
+	&lt;/xsl:template&gt;
+		
+	&lt;!-- general component header --&gt;
+	&lt;xsl:template name="ComponentHeader"&gt;
+		&lt;xsl:param name="Component" /&gt;
+		&lt;tr bgcolor="#bbbbbb"&gt;
+			&lt;td colspan="2"&gt;
+				&lt;xsl:text&gt;Component '&lt;/xsl:text&gt;
+				&lt;b&gt;
+					&lt;xsl:value-of select="$Component/tcm:Data/tcm:Title" /&gt;' (&lt;xsl:value-of select="$Component/@ID" /&gt;)
+				&lt;/b&gt;
+				&lt;xsl:text&gt;, based on Schema '&lt;/xsl:text&gt;
+				&lt;b&gt;
+					&lt;xsl:value-of select="$Component/tcm:Data/tcm:Schema/@xlink:title" /&gt;' (&lt;xsl:value-of select="$Component/tcm:Data/tcm:Schema/@xlink:href" /&gt;)
+				&lt;/b&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;!-- Template for converting enter characters into html BR tags --&gt;
+	&lt;xsl:template name="entertobreak"&gt;
+		&lt;xsl:param name="stringval" /&gt;
+		&lt;xsl:variable name="enter" select="'&amp;#xA;'" /&gt;
+		&lt;xsl:if test="contains($stringval, $enter)"&gt;
+			&lt;xsl:value-of select="substring-before($stringval, $enter)" /&gt;&lt;br /&gt;
+			&lt;xsl:call-template name="entertobreak"&gt;
+				&lt;xsl:with-param name="stringval" select="substring-after($stringval, $enter)" /&gt;
+			&lt;/xsl:call-template&gt;
+		&lt;/xsl:if&gt;
+		&lt;xsl:if test="not(contains($stringval, $enter))"&gt;
+			&lt;xsl:value-of select="$stringval" /&gt;
+		&lt;/xsl:if&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</tcm:PublisherScript>
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

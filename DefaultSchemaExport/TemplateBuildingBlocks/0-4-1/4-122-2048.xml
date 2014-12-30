@@ -1,0 +1,26 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Preview page</tcm:Title>
+    <tcm:Type>CSharpTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript>/* This template was generated through the Tridion Assembly Template Upload */
+&lt;%RunTemplate Template="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/DD4T%2ETemplates%2Emerged.tbbasm" Class="DD4T.Templates.PreviewPage"%&gt;</tcm:PublisherScript>
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="TemplateLinkedItem" itemType="TemplateBuildingBlock" xpath="tcccp:TemplateReferences/tcccp:TemplateReference[1]" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/DD4T%2ETemplates%2Emerged.tbbasm" />
+  </tcccp:Dependencies>
+  <tcccp:TemplateReferences>
+    <tcccp:TemplateReference isTcmReference="true" itemType="2048">/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/DD4T%2ETemplates%2Emerged.tbbasm</tcccp:TemplateReference>
+  </tcccp:TemplateReferences>
+</tcccp:Item>

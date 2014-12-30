@@ -1,0 +1,24 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation>Binaries\0-4-1\4-115-2048.tbbasm</tcccp:BinaryFileLocation>
+  <tcm:Data>
+    <tcm:Title>DD4T.Templates.merged</tcm:Title>
+    <tcm:Type>AssemblyTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript />
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="Generate dynamic page" xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Generate%20dynamic%20page.xsd" />
+    <tcm:Metadata />
+    <tcm:MultimediaFilename>DD4T.Templates.merged.dll</tcm:MultimediaFilename>
+    <tcm:MultimediaFileSize>190464</tcm:MultimediaFileSize>
+    <tcm:IsExternalMultimediaFile>false</tcm:IsExternalMultimediaFile>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Generate%20dynamic%20page.xsd" />
+  </tcccp:Dependencies>
+</tcccp:Item>

@@ -37,11 +37,55 @@
           </xsd:appinfo>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="introduction" minOccurs="0" maxOccurs="1" type="tcmi:MultiLineText">
+      <xsd:element name="introduction" minOccurs="0" maxOccurs="1" type="tcmi:XHTML">
         <xsd:annotation>
           <xsd:appinfo>
             <ExtensionXml xmlns="http://www.tridion.com/ContentManager/5.0" />
             <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">3</tcm:Size>
+            <tcm:FilterXSLT xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+              <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="" version="1.0">
+            <xsl:output omit-xml-declaration="yes" method="xml" cdata-section-elements="script" />
+            <xsl:template match="/ | node() | @*">
+              <xsl:copy>
+                <xsl:apply-templates select="node() | @*" />
+              </xsl:copy>
+            </xsl:template>
+            <xsl:template match="*[      (self::br or self::p or self::div)     and      normalize-space(translate(., ' ', '')) = ''     and      not(@*)     and      not(processing-instruction())     and      not(comment())     and      not(*[not(self::br) or @* or * or node()])     and      not(following::node()[not(         (self::text() or self::br or self::p or self::div)        and         normalize-space(translate(., ' ', '')) = ''        and         not(@*)        and         not(processing-instruction())        and         not(comment())        and         not(*[not(self::br) or @* or * or node()])       )])     ]">
+              <!-- ignore all paragraphs and line-breaks at the end that have nothing but (non-breaking) spaces and line breaks -->
+            </xsl:template>
+            <xsl:template match="br[parent::div and not(preceding-sibling::node()) and not(following-sibling::node())]">
+              <!-- Chrome generates <div><br/></div>. Renders differently in different browsers. Replace it with a non-breaking space -->
+              <xsl:text> </xsl:text>
+            </xsl:template>
+            <xsl:template name="FormattingFeatures">
+              <FormattingFeatures xmlns="http://www.tridion.com/ContentManager/5.2/FormatArea">
+                <Doctype>Transitional</Doctype>
+                <AccessibilityLevel>0</AccessibilityLevel>
+                <DisallowedActions>
+                  <Font />
+                  <Background />
+                  <Table />
+                  <TableWidth />
+                  <TableHeight />
+                  <TableCellSpacing />
+                  <TableCellPadding />
+                  <TableHAlign />
+                  <TableBorderSize />
+                  <TableBorderStyle />
+                  <TableBorderColor />
+                  <TableBackground />
+                  <TableCellWidth />
+                  <TableCellHeight />
+                  <TableCellHAlign />
+                  <TableCellVAlign />
+                  <TableCellBackground />
+                  <H1 />
+                </DisallowedActions>
+                <DisallowedStyles />
+              </FormattingFeatures>
+            </xsl:template>
+          </xsl:stylesheet>
+            </tcm:FilterXSLT>
           </xsd:appinfo>
         </xsd:annotation>
       </xsd:element>

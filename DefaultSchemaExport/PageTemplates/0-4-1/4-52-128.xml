@@ -1,0 +1,35 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Default%20Page%20Template%20for%20UGC.tptcmp</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Default Page Template for UGC</tcm:Title>
+    <tcm:Type>CompoundTemplate</tcm:Type>
+    <tcm:Content>
+      <tcm:PublisherScript>&lt;CompoundTemplate xmlns="http://www.tridion.com/ContentManager/5.3/CompoundTemplate"&gt;
+  &lt;TemplateInvocation&gt;
+    &lt;Template xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Enable%20User%20Generated%20Content%20Processing.tbbcs" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Enable User Generated Content Processing" /&gt;
+  &lt;/TemplateInvocation&gt;
+  &lt;TemplateInvocation&gt;
+    &lt;Template xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Default%20UGC%20Dreamweaver%20Template%20design.dwt" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Default UGC Dreamweaver Template design" /&gt;
+  &lt;/TemplateInvocation&gt;
+&lt;/CompoundTemplate&gt;</tcm:PublisherScript>
+    </tcm:Content>
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+    <tcm:FileExtension>html</tcm:FileExtension>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="TemplateLinkedItem" itemType="TemplateBuildingBlock" xpath="tcccp:TemplateReferences/tcccp:TemplateReference[1]" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Enable%20User%20Generated%20Content%20Processing.tbbcs" />
+    <tcccp:Dependency dependencyType="TemplateLinkedItem" itemType="TemplateBuildingBlock" xpath="tcccp:TemplateReferences/tcccp:TemplateReference[2]" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Default%20UGC%20Dreamweaver%20Template%20design.dwt" />
+  </tcccp:Dependencies>
+  <tcccp:TemplateReferences>
+    <tcccp:TemplateReference isTcmReference="true" itemType="2048">/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Enable%20User%20Generated%20Content%20Processing.tbbcs</tcccp:TemplateReference>
+    <tcccp:TemplateReference isTcmReference="true" itemType="2048">/webdav/020%20Global%20Design/Building%20Blocks/Default%20Templates/Default%20UGC%20Dreamweaver%20Template%20design.dwt</tcccp:TemplateReference>
+  </tcccp:TemplateReferences>
+</tcccp:Item>

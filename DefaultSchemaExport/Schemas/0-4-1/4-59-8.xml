@@ -1,0 +1,69 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/System/Schemas/Multimedia%20Schemas/Default%20Multimedia%20Schema.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Default Multimedia Schema</tcm:Title>
+    <tcm:Description>Default Multimedia Schema</tcm:Description>
+    <tcm:Purpose>Multimedia</tcm:Purpose>
+    <tcm:NamespaceURI>http://www.tridion.com/ContentManager/5.0/DefaultMultimediaSchema</tcm:NamespaceURI>
+    <tcm:RootElementName />
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="" targetNamespace="http://www.tridion.com/ContentManager/5.0/DefaultMultimediaSchema" elementFormDefault="qualified" />
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes>
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Gif image" xlink:href="tcm:0-1-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Jpeg image" xlink:href="tcm:0-2-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Png image" xlink:href="tcm:0-3-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Word document" xlink:href="tcm:0-4-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Excel sheet" xlink:href="tcm:0-5-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Powerpoint presentation" xlink:href="tcm:0-6-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Pdf document" xlink:href="tcm:0-7-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Sound file" xlink:href="tcm:0-8-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Plain text" xlink:href="tcm:0-9-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Rich text" xlink:href="tcm:0-10-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Executable" xlink:href="tcm:0-11-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="MSAccess database" xlink:href="tcm:0-12-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Bitmap image" xlink:href="tcm:0-13-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Real player" xlink:href="tcm:0-14-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="QuickTime movie" xlink:href="tcm:0-15-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Mp3 music" xlink:href="tcm:0-16-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Mpeg video" xlink:href="tcm:0-17-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Flash file" xlink:href="tcm:0-18-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Cascading style sheets" xlink:href="tcm:0-19-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Java script" xlink:href="tcm:0-20-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Configuration settings" xlink:href="tcm:0-21-65544" />
+    </tcm:AllowedMultimediaTypes>
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Multimedia%20Schemas" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[1]/@xlink:href" mandatory="true" itemUrl="/webdav//Gif%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[2]/@xlink:href" mandatory="true" itemUrl="/webdav//Jpeg%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[3]/@xlink:href" mandatory="true" itemUrl="/webdav//Png%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[4]/@xlink:href" mandatory="true" itemUrl="/webdav//Word%20document.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[5]/@xlink:href" mandatory="true" itemUrl="/webdav//Excel%20sheet.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[6]/@xlink:href" mandatory="true" itemUrl="/webdav//Powerpoint%20presentation.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[7]/@xlink:href" mandatory="true" itemUrl="/webdav//Pdf%20document.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[8]/@xlink:href" mandatory="true" itemUrl="/webdav//Sound%20file.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[9]/@xlink:href" mandatory="true" itemUrl="/webdav//Plain%20text.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[10]/@xlink:href" mandatory="true" itemUrl="/webdav//Rich%20text.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[11]/@xlink:href" mandatory="true" itemUrl="/webdav//Executable.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[12]/@xlink:href" mandatory="true" itemUrl="/webdav//MSAccess%20database.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[13]/@xlink:href" mandatory="true" itemUrl="/webdav//Bitmap%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[14]/@xlink:href" mandatory="true" itemUrl="/webdav//Real%20player.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[15]/@xlink:href" mandatory="true" itemUrl="/webdav//QuickTime%20movie.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[16]/@xlink:href" mandatory="true" itemUrl="/webdav//Mp3%20music.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[17]/@xlink:href" mandatory="true" itemUrl="/webdav//Mpeg%20video.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[18]/@xlink:href" mandatory="true" itemUrl="/webdav//Flash%20file.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[19]/@xlink:href" mandatory="true" itemUrl="/webdav//Cascading%20style%20sheets.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[20]/@xlink:href" mandatory="true" itemUrl="/webdav//Java%20script.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[21]/@xlink:href" mandatory="true" itemUrl="/webdav//Configuration%20settings.tmt" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

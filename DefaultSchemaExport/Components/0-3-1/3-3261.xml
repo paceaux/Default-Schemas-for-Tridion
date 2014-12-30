@@ -1,0 +1,26 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Last Name</tcm:Title>
+    <tcm:Type>Normal</tcm:Type>
+    <tcm:Schema xlink:type="simple" xlink:title="Generic Form Input Field" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form%20Input%20Field.xsd" IsMandatory="false" />
+    <tcm:Content>
+      <formInputField xmlns="uuid:8a3bb0f6-2928-4969-8185-088ffbd029fe">
+        <inputType>Text</inputType>
+        <attributes>
+          <label>Last Name</label>
+        </attributes>
+      </formInputField>
+    </tcm:Content>
+    <tcm:Metadata />
+    <tcm:IsBasedOnTridionWebSchema>true</tcm:IsBasedOnTridionWebSchema>
+    <tcm:MultimediaType xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms" />
+    <tcccp:Dependency dependencyType="Schema" itemType="Schema" xpath="tcm:Data/tcm:Schema/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form%20Input%20Field.xsd" />
+  </tcccp:Dependencies>
+</tcccp:Item>

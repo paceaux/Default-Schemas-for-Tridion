@@ -1,0 +1,21 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/010%20Schemas%20and%20Categories/Dynamic%20Form%20Widths/One%20third%20(1%2F3).tkw</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>One third (1/3)</tcm:Title>
+    <tcm:Description />
+    <tcm:Key>2</tcm:Key>
+    <tcm:IsAbstract>false</tcm:IsAbstract>
+    <tcm:ParentKeywords />
+    <tcm:RelatedKeywords />
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata />
+    <tcm:IsRoot>true</tcm:IsRoot>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemCategory" itemType="Category" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Dynamic%20Form%20Widths" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

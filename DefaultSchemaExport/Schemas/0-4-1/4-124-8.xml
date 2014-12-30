@@ -1,35 +1,87 @@
 <tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <tcccp:PrimaryBlueprintParentUrl>/webdav/000%20Empty%20Parent/Building%20Blocks/Default%20Templates/Link%20Resolver.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:PrimaryBlueprintParentUrl />
   <tcccp:BlueprintParentUrl />
   <tcccp:BinaryFileLocation />
   <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-    <tcm:Title>Link Resolver</tcm:Title>
-    <tcm:Description>Link Resolver</tcm:Description>
+    <tcm:Title>Add inherited metadata to component</tcm:Title>
+    <tcm:Description>Add inherited metadata to component</tcm:Description>
     <tcm:Purpose>TemplateParameters</tcm:Purpose>
-    <tcm:NamespaceURI>uuid:7AF81DA8-33B1-4E51-8270-BFB98DF2FF81</tcm:NamespaceURI>
+    <tcm:NamespaceURI>DD4T.Templates.Schemas.DynamicDeliveryParameters</tcm:NamespaceURI>
     <tcm:RootElementName>Parameters</tcm:RootElementName>
     <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
     <tcm:XSD>
-      <xsd:schema xmlns="uuid:7AF81DA8-33B1-4E51-8270-BFB98DF2FF81" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="uuid:7AF81DA8-33B1-4E51-8270-BFB98DF2FF81">
-        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" xmlns="DD4T.Templates.Schemas.DynamicDeliveryParameters" targetNamespace="DD4T.Templates.Schemas.DynamicDeliveryParameters" elementFormDefault="qualified">
         <xsd:annotation>
           <xsd:appinfo>
             <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
-              <tcm:Label ElementName="ItemName" Metadata="false">Item name</tcm:Label>
+              <tcm:Label ElementName="MergeAction" Metadata="false">Action to take if field with the same name is inherited</tcm:Label>
+              <tcm:Label ElementName="LinkLevels" Metadata="false">Number of levels to follow links</tcm:Label>
+              <tcm:Label ElementName="ResolveWidthAndHeight" Metadata="false">Resolve width and height of images</tcm:Label>
+              <tcm:Label ElementName="sg_PublishBinariesTargetStructureGroup" Metadata="false">StructureGroup to which binaries must be published</tcm:Label>
+              <tcm:Label ElementName="PublishEmptyFields" Metadata="false">Publish empty fields of an item</tcm:Label>
             </tcm:Labels>
           </xsd:appinfo>
         </xsd:annotation>
+        <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
         <xsd:element name="Parameters">
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="ItemName" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+              <xsd:element name="MergeAction" minOccurs="0" maxOccurs="1">
                 <xsd:annotation>
                   <xsd:appinfo>
-                    <tcm:CustomURL xmlns:tcm="http://www.tridion.com/ContentManager/5.0">/TemplateBuilder/TemplateParameterDescriptions/LinkResolver.html#ItemName</tcm:CustomURL>
-                    <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
-                    <tcm:DefaultTextValue xmlns:tcm="http://www.tridion.com/ContentManager/5.0">Output</tcm:DefaultTextValue>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
                   </xsd:appinfo>
                 </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="Replace" />
+                    <xsd:enumeration value="Skip" />
+                    <xsd:enumeration value="Merge" />
+                    <xsd:enumeration value="MergeMultiValueReplaceSingleValue" />
+                    <xsd:enumeration value="MergeMultiValueSkipSingleValue" />
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="LinkLevels" minOccurs="0" maxOccurs="1" type="xsd:decimal">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="ResolveWidthAndHeight" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">checkbox</tcm:listtype>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                  </xsd:appinfo>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="yes" />
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="sg_PublishBinariesTargetStructureGroup" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ExternalLink</tcm:linktype>
+                  </xsd:appinfo>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="PublishEmptyFields" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                  <xsd:appinfo>
+                    <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">checkbox</tcm:listtype>
+                    <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+                  </xsd:appinfo>
+                </xsd:annotation>
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:normalizedString">
+                    <xsd:enumeration value="yes" />
+                  </xsd:restriction>
+                </xsd:simpleType>
               </xsd:element>
             </xsd:sequence>
           </xsd:complexType>
@@ -42,8 +94,8 @@
     <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
   </tcm:Data>
   <tcccp:Dependencies>
-    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
-    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/Default%20Templates" />
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs" />
     <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
     <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
   </tcccp:Dependencies>

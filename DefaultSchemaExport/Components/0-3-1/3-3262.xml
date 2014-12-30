@@ -1,0 +1,39 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Name Fieldset</tcm:Title>
+    <tcm:Type>Normal</tcm:Type>
+    <tcm:Schema xlink:type="simple" xlink:title="Generic Form Fieldset" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form%20Fieldset.xsd" IsMandatory="false" />
+    <tcm:Content>
+      <fieldset xmlns="uuid:8abe3dd8-0a02-4e28-95fb-a47fa3199678">
+        <legend>Your Name</legend>
+        <fields xmlns="uuid:8abe3dd8-0a02-4e28-95fb-a47fa3199678">
+          <field xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms/First%20Name.xml" xlink:title="First Name" />
+          <required>true</required>
+          <disabled>false</disabled>
+          <width xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Content/Dynamic%20Form%20Widths/Full%20width.tkw" xlink:title="Full width">Full width</width>
+        </fields>
+        <fields>
+          <field xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms/Last%20Name.xml" xlink:title="Last Name" />
+          <required>true</required>
+          <disabled>true</disabled>
+          <width xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Content/Dynamic%20Form%20Widths/Full%20width.tkw" xlink:title="Full width">Full width</width>
+        </fields>
+      </fieldset>
+    </tcm:Content>
+    <tcm:Metadata />
+    <tcm:IsBasedOnTridionWebSchema>true</tcm:IsBasedOnTridionWebSchema>
+    <tcm:MultimediaType xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms" />
+    <tcccp:Dependency dependencyType="LinkedComponent" itemType="Component" xpath="tcm:Data/tcm:Content/*[local-name() = 'fieldset'][1]/*[local-name() = 'fields'][1]/*[local-name() = 'field'][1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms/First%20Name.xml" />
+    <tcccp:Dependency dependencyType="LinkedComponent" itemType="Component" xpath="tcm:Data/tcm:Content/*[local-name() = 'fieldset'][1]/*[local-name() = 'fields'][2]/*[local-name() = 'field'][1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/Content/forms/Last%20Name.xml" />
+    <tcccp:Dependency dependencyType="LinkedKeyword" itemType="Keyword" xpath="tcm:Data/tcm:Content/*[local-name() = 'fieldset'][1]/*[local-name() = 'fields'][1]/*[local-name() = 'width'][1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Dynamic%20Form%20Widths/Full%20width.tkw" />
+    <tcccp:Dependency dependencyType="LinkedKeyword" itemType="Keyword" xpath="tcm:Data/tcm:Content/*[local-name() = 'fieldset'][1]/*[local-name() = 'fields'][2]/*[local-name() = 'width'][1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Dynamic%20Form%20Widths/Full%20width.tkw" />
+    <tcccp:Dependency dependencyType="Schema" itemType="Schema" xpath="tcm:Data/tcm:Schema/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form%20Fieldset.xsd" />
+  </tcccp:Dependencies>
+</tcccp:Item>

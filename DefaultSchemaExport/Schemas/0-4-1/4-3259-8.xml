@@ -1,0 +1,60 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form%20Fieldset.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Generic Form Fieldset</tcm:Title>
+    <tcm:Description>Generic Form Fieldset</tcm:Description>
+    <tcm:Purpose>Component</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:8abe3dd8-0a02-4e28-95fb-a47fa3199678</tcm:NamespaceURI>
+    <tcm:RootElementName>fieldset</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:8abe3dd8-0a02-4e28-95fb-a47fa3199678" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" elementFormDefault="qualified" targetNamespace="uuid:8abe3dd8-0a02-4e28-95fb-a47fa3199678">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:include schemaLocation="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Field.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="legend" Metadata="false">Title/legend</tcm:Label>
+        <tcm:Label ElementName="fields" Metadata="false">Fields</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="fieldset">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="legend" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="fields" minOccurs="1" maxOccurs="unbounded" type="embeddedFieldType">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Field.xsd" xlink:title="Generic Form Embedded Field" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Content" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:include[1]/@schemaLocation" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Field.xsd" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[2]/xsd:annotation[1]/xsd:appinfo[1]/tcm:EmbeddedSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Field.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

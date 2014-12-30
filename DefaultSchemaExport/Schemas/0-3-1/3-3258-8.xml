@@ -1,0 +1,110 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Form%20Schemas/Content/Generic%20Form.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Generic Form</tcm:Title>
+    <tcm:Description>Generic Form</tcm:Description>
+    <tcm:Purpose>Component</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:08bca4e1-5ada-44b9-b69c-7ed3981354aa</tcm:NamespaceURI>
+    <tcm:RootElementName>dynamicForm</tcm:RootElementName>
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:08bca4e1-5ada-44b9-b69c-7ed3981354aa" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" elementFormDefault="qualified" targetNamespace="uuid:08bca4e1-5ada-44b9-b69c-7ed3981354aa">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:include schemaLocation="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Fieldset.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="title" Metadata="false">Title of the Form</tcm:Label>
+        <tcm:Label ElementName="subtitle" Metadata="false">Sub Title</tcm:Label>
+        <tcm:Label ElementName="introduction" Metadata="false">Introduction</tcm:Label>
+        <tcm:Label ElementName="formAction" Metadata="false">Custom Form Action</tcm:Label>
+        <tcm:Label ElementName="labelLocation" Metadata="false">Location of labels of all Fields on the Form</tcm:Label>
+        <tcm:Label ElementName="fieldsets" Metadata="false">Fieldsets</tcm:Label>
+        <tcm:Label ElementName="disclaimer" Metadata="false">Disclaimer</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="dynamicForm">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="title" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="subtitle" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="introduction" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="formAction" minOccurs="0" maxOccurs="1" type="xsd:normalizedString">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="labelLocation" minOccurs="1" maxOccurs="1">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:Size xmlns:tcm="http://www.tridion.com/ContentManager/5.0">1</tcm:Size>
+              <tcm:listtype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">select</tcm:listtype>
+            </xsd:appinfo>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:normalizedString">
+              <xsd:enumeration value="Left" />
+              <xsd:enumeration value="Top" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="fieldsets" minOccurs="1" maxOccurs="unbounded" type="embeddedFieldset">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Fieldset.xsd" xlink:title="Generic Form Embedded Fieldset" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="disclaimer" minOccurs="0" maxOccurs="1" type="tcmi:SimpleLink">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:linktype xmlns:tcm="http://www.tridion.com/ContentManager/5.0">ComponentLink</tcm:linktype>
+              <tcm:AllowMultimediaLinks xmlns:tcm="http://www.tridion.com/ContentManager/5.0">false</tcm:AllowMultimediaLinks>
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes />
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Content" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:include[1]/@schemaLocation" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Fieldset.xsd" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[6]/xsd:annotation[1]/xsd:appinfo[1]/tcm:EmbeddedSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Content/Building%20Blocks/System/Schemas/Form%20Schemas/Embeddable/Generic%20Form%20Embedded%20Fieldset.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>

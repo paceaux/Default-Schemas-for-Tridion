@@ -54,6 +54,19 @@
             </xsd:extension>
           </xsd:simpleContent>
         </xsd:complexType>
+        <xsd:complexType name="dynamicFormWidths">
+          <xsd:annotation>
+            <xsd:documentation>Dynamic Form Widths</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleContent>
+            <xsd:extension base="xsd:normalizedString">
+              <xsd:attribute ref="category:CategoryURI" use="optional" fixed="tcm:3-2052-512" />
+              <xsd:attribute ref="xlink:type" use="optional" fixed="simple" />
+              <xsd:attribute ref="xlink:href" use="optional" />
+              <xsd:attribute ref="xlink:title" use="optional" />
+            </xsd:extension>
+          </xsd:simpleContent>
+        </xsd:complexType>
         <xsd:complexType name="formInputValidations">
           <xsd:annotation>
             <xsd:documentation>Form Input Validations</xsd:documentation>

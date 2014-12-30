@@ -3,14 +3,14 @@
   <tcccp:BlueprintParentUrl />
   <tcccp:BinaryFileLocation />
   <tcm:Data>
-    <tcm:Title>Page DWT Design</tcm:Title>
+    <tcm:Title>DD4T TBBs</tcm:Title>
     <tcm:LinkedSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" IsMandatory="false" />
     <tcm:MetadataSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
     <tcm:Metadata />
   </tcm:Data>
   <tcccp:Dependencies>
-    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories" />
-    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Template%20Building%20Blocks/Dreamweaver%20TBBs" />
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System" />
     <tcccp:Dependency dependencyType="LinkedSchema" itemType="Schema" xpath="tcm:Data/tcm:LinkedSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
     <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
   </tcccp:Dependencies>

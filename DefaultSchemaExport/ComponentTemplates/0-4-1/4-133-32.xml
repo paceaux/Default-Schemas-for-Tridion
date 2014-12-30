@@ -1,0 +1,50 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <tcccp:PrimaryBlueprintParentUrl />
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data>
+    <tcm:Title>Article Promo CT</tcm:Title>
+    <tcm:Type>CompoundTemplate</tcm:Type>
+    <tcm:Priority>200</tcm:Priority>
+    <tcm:OutputFormat>HTML Fragment</tcm:OutputFormat>
+    <tcm:Content>
+      <tcm:PublisherScript>&lt;CompoundTemplate xmlns="http://www.tridion.com/ContentManager/5.3/CompoundTemplate"&gt;
+  &lt;TemplateInvocation&gt;
+    &lt;Template xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Generate%20dynamic%20component.tbbcs" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Generate dynamic component" /&gt;
+    &lt;TemplateParameters&gt;
+      &lt;Parameters xmlns="DD4T.Templates.Schemas.DynamicDeliveryParameters"&gt;
+        &lt;LinkLevels&gt;4&lt;/LinkLevels&gt;
+      &lt;/Parameters&gt;
+    &lt;/TemplateParameters&gt;
+  &lt;/TemplateInvocation&gt;
+  &lt;TemplateInvocation&gt;
+    &lt;Template xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Publish%20binaries%20for%20component.tbbcs" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="Publish binaries for component" /&gt;
+  &lt;/TemplateInvocation&gt;
+&lt;/CompoundTemplate&gt;</tcm:PublisherScript>
+      <tcm:DynamicTemplate />
+    </tcm:Content>
+    <tcm:AllowOnPage>true</tcm:AllowOnPage>
+    <tcm:IsRepositoryPublishable>false</tcm:IsRepositoryPublishable>
+    <tcm:RelatedSchemas />
+    <tcm:TrackingCategories />
+    <tcm:MetadataSchema xlink:type="simple" xlink:title="DD4T Metadata Schema" xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Metadata%20Schemas/DD4T%20Metadata%20Schema.xsd" />
+    <tcm:ParameterSchema xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:Metadata>
+      <Metadata xmlns="uuid:e9994883-f6cf-4bcd-9eb2-aa6f6ee067e7">
+        <view>articlepromo</view>
+      </Metadata>
+    </tcm:Metadata>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Component%20Templates" />
+    <tcccp:Dependency dependencyType="MetadataSchema" itemType="Schema" xpath="tcm:Data/tcm:MetadataSchema/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Metadata%20Schemas/DD4T%20Metadata%20Schema.xsd" />
+    <tcccp:Dependency dependencyType="ParameterSchema" itemType="Schema" xpath="tcm:Data/tcm:ParameterSchema/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="TemplateLinkedItem" itemType="TemplateBuildingBlock" xpath="tcccp:TemplateReferences/tcccp:TemplateReference[1]" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Generate%20dynamic%20component.tbbcs" />
+    <tcccp:Dependency dependencyType="TemplateLinkedItem" itemType="TemplateBuildingBlock" xpath="tcccp:TemplateReferences/tcccp:TemplateReference[2]" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Publish%20binaries%20for%20component.tbbcs" />
+  </tcccp:Dependencies>
+  <tcccp:TemplateReferences>
+    <tcccp:TemplateReference isTcmReference="true" itemType="2048">/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Generate%20dynamic%20component.tbbcs</tcccp:TemplateReference>
+    <tcccp:TemplateReference isTcmReference="true" itemType="2048">/webdav/020%20Global%20Design/Building%20Blocks/System/DD4T%20TBBs/Publish%20binaries%20for%20component.tbbcs</tcccp:TemplateReference>
+  </tcccp:TemplateReferences>
+</tcccp:Item>

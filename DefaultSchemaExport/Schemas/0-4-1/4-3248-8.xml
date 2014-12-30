@@ -1,0 +1,61 @@
+<tcccp:Item xmlns:tcccp="http://www.tridion.com/ContentManager/5.2/ImportExport" xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <tcccp:PrimaryBlueprintParentUrl>/webdav/010%20Schemas%20and%20Categories/Building%20Blocks/System/Schemas/Form%20Schemas/Multimedia/Generic%20Form%20Image.xsd</tcccp:PrimaryBlueprintParentUrl>
+  <tcccp:BlueprintParentUrl />
+  <tcccp:BinaryFileLocation />
+  <tcm:Data xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <tcm:Title>Generic Form Image</tcm:Title>
+    <tcm:Description>Image</tcm:Description>
+    <tcm:Purpose>Multimedia</tcm:Purpose>
+    <tcm:NamespaceURI>uuid:6f2608cd-f889-4952-b9ef-13f5e10cd889</tcm:NamespaceURI>
+    <tcm:RootElementName />
+    <tcm:IsTridionWebSchema>true</tcm:IsTridionWebSchema>
+    <tcm:XSD>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="uuid:6f2608cd-f889-4952-b9ef-13f5e10cd889" xmlns:tcmi="http://www.tridion.com/ContentManager/5.0/Instance" elementFormDefault="qualified" targetNamespace="uuid:6f2608cd-f889-4952-b9ef-13f5e10cd889">
+  <xsd:import namespace="http://www.tridion.com/ContentManager/5.0/Instance" schemaLocation="/webdav/cm_xml_inst.xsd" />
+  <xsd:include schemaLocation="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Image%20Attributes.xsd" />
+  <xsd:annotation>
+    <xsd:appinfo>
+      <tcm:Labels xmlns:tcm="http://www.tridion.com/ContentManager/5.0">
+        <tcm:Label ElementName="attributes" Metadata="true">Attributes</tcm:Label>
+      </tcm:Labels>
+    </xsd:appinfo>
+  </xsd:annotation>
+  <xsd:element name="Metadata">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="attributes" minOccurs="0" maxOccurs="1" type="imageAttributes">
+          <xsd:annotation>
+            <xsd:appinfo>
+              <tcm:ExtensionXml xmlns:tcm="http://www.tridion.com/ContentManager/5.0" />
+              <tcm:EmbeddedSchema xmlns:tcm="http://www.tridion.com/ContentManager/5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Image%20Attributes.xsd" xlink:title="Image Attributes" />
+            </xsd:appinfo>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+    </tcm:XSD>
+    <tcm:AllowedMultimediaTypes>
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Gif image" xlink:href="tcm:0-1-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Jpeg image" xlink:href="tcm:0-2-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Png image" xlink:href="tcm:0-3-65544" />
+      <tcm:AllowedMultimediaType xlink:type="simple" xlink:title="Bitmap image" xlink:href="tcm:0-13-65544" />
+    </tcm:AllowedMultimediaTypes>
+    <tcm:ComponentProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:BundleProcess xlink:type="simple" xlink:title="" xlink:href="tcm:0-0-0" />
+    <tcm:DeleteBundleOnProcessFinished>false</tcm:DeleteBundleOnProcessFinished>
+  </tcm:Data>
+  <tcccp:Dependencies>
+    <tcccp:Dependency dependencyType="Publication" itemType="Publication" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design" />
+    <tcccp:Dependency dependencyType="OrganizationalItemFolder" itemType="Folder" xpath="" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Form%20Schemas/Multimedia" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[1]/@xlink:href" mandatory="true" itemUrl="/webdav//Gif%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[2]/@xlink:href" mandatory="true" itemUrl="/webdav//Jpeg%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[3]/@xlink:href" mandatory="true" itemUrl="/webdav//Png%20image.tmt" />
+    <tcccp:Dependency dependencyType="AllowedMultimediaType" itemType="MultimediaType" xpath="tcm:Data/tcm:AllowedMultimediaTypes/tcm:AllowedMultimediaType[4]/@xlink:href" mandatory="true" itemUrl="/webdav//Bitmap%20image.tmt" />
+    <tcccp:Dependency dependencyType="ComponentProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:ComponentProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:include[1]/@schemaLocation" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Image%20Attributes.xsd" />
+    <tcccp:Dependency dependencyType="EmbeddedSchema" itemType="Schema" xpath="tcm:Data/tcm:XSD/xsd:schema[1]/xsd:element[1]/xsd:complexType[1]/xsd:sequence[1]/xsd:element[1]/xsd:annotation[1]/xsd:appinfo[1]/tcm:EmbeddedSchema[1]/@xlink:href" mandatory="true" itemUrl="/webdav/020%20Global%20Design/Building%20Blocks/System/Schemas/Embeddable%20Schemas/Image%20Attributes.xsd" />
+    <tcccp:Dependency dependencyType="SchemaBundleProcess" itemType="ProcessDefinition" xpath="tcm:Data/tcm:BundleProcess/@xlink:href" mandatory="true" itemUrl="tcm:0-0-0" />
+  </tcccp:Dependencies>
+</tcccp:Item>
