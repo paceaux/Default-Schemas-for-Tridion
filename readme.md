@@ -1,23 +1,27 @@
 # Default Schemas for Tridion (DS4T)
-## Version: 0.0.3
+## Version: 0.0.4
 ## Description
 
 These are some very generic, default schemas that could work for most Tridion 2013 implementations. 
 This is a Content Porter Export package. It should run for SDL Tridion 2013 and lower.
 
-Please reference the Wiki  for documentation on the schemas on what's in the schemas. 
+Please reference the Wiki for documentation on the schemas on what's in the schemas. 
 
 ## Contents
 
 
 ### Blueprint
+
 000 Empty Parent
+
 010 Schemas and Categories
+
 
 ### Schemas
 + Bundle Schemas
 + Content Schemas
 + Embeddable Schemas
++ Form Schemas
 + Metadata Schemas
 + Multimedia Schemas
 + Parameter Schemas
@@ -27,6 +31,8 @@ Please reference the Wiki  for documentation on the schemas on what's in the sch
 + Aspect Ratios
 + Devices
 + Social media
++ Dynamic Form Widths
++ Form Input Validations
 
 
 
